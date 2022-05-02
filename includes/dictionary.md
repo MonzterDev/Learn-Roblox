@@ -1,0 +1,1 @@
+*[fork]: Forking is to take the source code from an open source software program and develop an entirely new program.

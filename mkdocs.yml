@@ -1,0 +1,84 @@
+site_name: Learn Roblox
+site_url: https://learnroblox.org/
+
+theme:
+  name: material
+  # logo: assets/logo.png
+  # favicon: assets/logo.png
+  custom_dir: overrides
+  palette:
+    - primary: red
+      accent: blue
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
+
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.top
+    - navigation.expand
+    - navigation.indexes
+    - toc.follow
+
+plugins:
+  - search
+  - redirects:
+      redirect_maps:
+          'old.md': 'new.md'
+          'old/file.md': 'new/file.md'
+          'some_file.md': 'http://external.url.com/foobar'
+
+# https://pypi.org/project/mkdocs-redirects/
+
+extra:
+  generator: false
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/LearnRoblox
+      name: LearnRoblox on Twitter
+    - icon: fontawesome/brands/discord
+      link: https://Discord.gg/LearnRoblox
+      name: LearnRoblox on Discord
+    - icon: fontawesome/brands/youtube
+      link: https://YouTube.com/MonzterDev
+      name: MonzterDev on YouTube
+
+copyright: NOT AFFILIATED WITH OR ENDORSED BY ROBLOX
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - meta
+  - abbr
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+
+nav:
+  - Home: index.md
+  - Courses:
+    - courses/index.md
+    # - Roblox Studio Basics:
+    #   - courses/roblox-studio-basics/index.md
+    #   - Create a New Place: courses/roblox-studio-basics/creating-a-new-place.md
+    - Learn Scripting with Luau:
+      - Introduction to Scripting:
+        - courses/scripting/introduction-to-scripting/index.md
+        - Setting Up: courses/scripting/introduction-to-scripting/setting-up.md
+        - Output: courses/scripting/introduction-to-scripting/output.md
+        # - Creating a Script: courses/scripting/introduction-to-scripting/creating-a-script.md
+
+  - About: about.md
