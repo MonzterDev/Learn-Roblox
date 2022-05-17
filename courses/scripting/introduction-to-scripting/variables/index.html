@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://learnroblox.org/courses/scripting/introduction-to-scripting/setting-up/">
+        <link rel="canonical" href="https://learnroblox.org/courses/scripting/introduction-to-scripting/variables/">
       
       
         
@@ -18,7 +18,7 @@
     
     
       
-        <title>Setting Up - Learn Roblox</title>
+        <title>Variables - Learn Roblox</title>
       
     
     
@@ -119,7 +119,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#creating-our-game" class="md-skip">
+        <a href="#naming-a-variable" class="md-skip">
           Skip to content
         </a>
       
@@ -152,7 +152,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Setting Up
+              Variables
             
           </span>
         </div>
@@ -534,26 +534,9 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Setting Up
-  </span>
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../setting-up/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -561,51 +544,6 @@
   </span>
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#creating-our-game" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creating our Game
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#setting-up-studio" class="md-nav__link">
-    <span class="md-ellipsis">
-      Setting up Studio
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-we-learned" class="md-nav__link">
-    <span class="md-ellipsis">
-      What we Learned
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -729,9 +667,26 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../variables/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Variables
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -739,6 +694,117 @@
   </span>
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#naming-a-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Naming a Variable
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Naming a Variable">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#camel-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      Camel Case
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assigning-a-value-to-a-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assigning a Value to a Variable
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#printing-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Printing Variables
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reassigning-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reassigning Variables
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scope
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scope">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#local" class="md-nav__link">
+    <span class="md-ellipsis">
+      Local
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#global" class="md-nav__link">
+    <span class="md-ellipsis">
+      Global
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-we-learned" class="md-nav__link">
+    <span class="md-ellipsis">
+      What we Learned
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -908,20 +974,86 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creating-our-game" class="md-nav__link">
+  <a href="#naming-a-variable" class="md-nav__link">
     <span class="md-ellipsis">
-      Creating our Game
+      Naming a Variable
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Naming a Variable">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#camel-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      Camel Case
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assigning-a-value-to-a-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assigning a Value to a Variable
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#setting-up-studio" class="md-nav__link">
+  <a href="#printing-variables" class="md-nav__link">
     <span class="md-ellipsis">
-      Setting up Studio
+      Printing Variables
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reassigning-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reassigning Variables
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scope
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scope">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#local" class="md-nav__link">
+    <span class="md-ellipsis">
+      Local
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#global" class="md-nav__link">
+    <span class="md-ellipsis">
+      Global
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -949,38 +1081,187 @@
                 
 
 
-  <h1>Setting Up</h1>
+  <h1>Variables</h1>
 
-<h2 id="creating-our-game">Creating our Game<a class="headerlink" href="#creating-our-game" title="Permanent link">&para;</a></h2>
-<p>Before we begin <strong>scripting</strong>, let's <strong>create</strong> a new <strong>project</strong> which we'll work on during this course.</p>
-<ol>
-<li>Launch Roblox Studio</li>
-<li>Click the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2Z"/></svg></span><code>New</code> button on the left side of the screen</li>
-<li>Select the Baseplate template</li>
-</ol>
-<p>We should now <strong>save</strong> and <strong>publish</strong> the <strong>project</strong> to Roblox, so we don't lose it.</p>
-<ol>
-<li>Select the <code>HOME</code> tab on the top of the screen (to the left of the <code>MODEL</code> tab)</li>
-<li>Click the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 0 1 8.5 12 3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97 0-.33-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1 0 .33.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.66Z"/></svg></span><code>Game settings</code> button (to the left of the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 17v2H2v-2s0-4 7-4 7 4 7 4m-3.5-9.5A3.5 3.5 0 1 0 9 11a3.5 3.5 0 0 0 3.5-3.5m3.44 5.5A5.32 5.32 0 0 1 18 17v2h4v-2s0-3.63-6.06-4M15 4a3.39 3.39 0 0 0-1.93.59 5 5 0 0 1 0 5.82A3.39 3.39 0 0 0 15 11a3.5 3.5 0 0 0 0-7Z"/></svg></span><code>Team Test</code> button)</li>
-<li>Click the <code>Save to Roblox</code> button</li>
-<li>Change the "Name" field to whatever you want, and click the <code>Save</code> button</li>
-</ol>
-<p><img src="/img/courses/scripting/Save-To-Roblox.png" alt="Save to Roblox"></p>
-<p><strong>Studio</strong> might reload the place, and now our <strong>changes</strong> will be <strong>saved</strong> directly to <strong>Roblox</strong> and we can <strong>modify</strong> the game from any <strong>device</strong>!</p>
-<h2 id="setting-up-studio">Setting up Studio<a class="headerlink" href="#setting-up-studio" title="Permanent link">&para;</a></h2>
-<p>Let's make sure we have all the <strong>tools</strong> <strong>enabled</strong> in <strong>Studio</strong> that we need for this course!</p>
-<ol>
-<li>Click the <code>VIEW</code> tab at the top of the screen</li>
-<li>Enable all of the following tools: <strong>Explorer</strong>, <strong>Properties</strong>, <strong>Toolbox</strong>, <strong>Output</strong>, &amp; <strong>Command Bar</strong></li>
-</ol>
-<p><img src="/img/courses/scripting/Studio-Setup.png" alt="Studio Setup"></p>
-<p>Your <strong>Studio</strong> should look nearly identical to the image above.</p>
+<p>A <strong>variable</strong> can be thought of as a <strong>container</strong> for a value.</p>
+<h2 id="naming-a-variable">Naming a Variable<a class="headerlink" href="#naming-a-variable" title="Permanent link">&para;</a></h2>
+<p>We can create a variable by giving it a <strong>name</strong>. Certain <strong>rules</strong> must be followed when naming our <strong>variables</strong>:</p>
+<ul>
+<li>Cannot start with a number</li>
+<li>Cannot contain certain symbols (Example: <code>!</code>, <code>"</code>, <code>,</code> &amp; many more)</li>
+<li>Cannot be certain reserved words (Example: <code>false</code> since that's the value of a boolean)</li>
+</ul>
+<p>Let's create a few variables inside of our <strong>Script</strong>.
+    <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Script</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">variable1</span>
+<span class="n">ImAVariable</span>
+<span class="n">i_Am_A_Variable</span>
+</code></pre></div></td></tr></table></div></p>
+<h3 id="camel-case">Camel Case<a class="headerlink" href="#camel-case" title="Permanent link">&para;</a></h3>
+<p>Whenever you decide on a name for your variable, you want to follow a strict <strong>naming convention</strong> throughout your entire project.</p>
+<p><strong>Camel Case</strong> is a naming convention in which a name is formed of multiple words, the <strong>first letter</strong> in the <strong>first word</strong> is <strong>lowercase</strong>, while the <strong>first letter</strong> in <strong>each word after</strong> the first is <strong>capitalized</strong>.
+    <div class="highlight"><span class="filename">Example</span><pre><span></span><code><span class="n">variable1</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">imAVariable</span> <span class="o">=</span> <span class="s2">&quot;Hi!&quot;</span>
+<span class="n">iAmAVariable</span> <span class="o">=</span> <span class="kc">true</span>
+</code></pre></div></p>
+<p><strong>Camel Case</strong> is the most commonly used naming convention in Roblox projects. There are <strong>no required</strong> or <strong>standard naming conventions</strong>, but it's highly recommended you use the most common one.</p>
+<h2 id="assigning-a-value-to-a-variable">Assigning a Value to a Variable<a class="headerlink" href="#assigning-a-value-to-a-variable" title="Permanent link">&para;</a></h2>
+<p>Since we have already given our <strong>variables</strong> names, we can give them some <strong>values</strong> to store using the equal <code>=</code> symbol. In the <strong>Data Types</strong> chapter when we talked about multiple types of data that <strong>variables</strong> can hold. Lets <strong>assign</strong> a <strong>variable</strong> to each <strong>type</strong> of <strong>data</strong>.
+    <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Script</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">variable1</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">imAVariable</span> <span class="o">=</span> <span class="s2">&quot;Hi!&quot;</span>
+<span class="n">iAmAVariable</span> <span class="o">=</span> <span class="kc">true</span>
+</code></pre></div></td></tr></table></div></p>
+<p>Looking at each variable we can see that <code>variable1</code> is of the type <code>number</code> because its value is 10, <code>imAVariable</code> is of the type <code>string</code> because its value is a combination of characters surrounded by <code>"</code>s, and <code>iAmAVariable</code> is of the type <code>boolean</code> because its value is the word <code>true</code>. We forgot to include the <code>nil</code> type, but we can create another variable for that. When we create a variable with the value of <code>nil</code>, we're saying the variable doesn't have any value.
+    <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Script</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">variable1</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">imAVariable</span> <span class="o">=</span> <span class="s2">&quot;Hi!&quot;</span>
+<span class="n">iAmAVariable</span> <span class="o">=</span> <span class="kc">true</span>
+<span class="n">imNothing</span> <span class="o">=</span> <span class="kc">nil</span>
+</code></pre></div></td></tr></table></div></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Name</strong> = <strong>Value</strong></p>
+<p>The name of the variable is always on the left, while its value is always on the right and they're separated with an equals <code>=</code> sign between them.</p>
+</div>
+<h2 id="printing-variables">Printing Variables<a class="headerlink" href="#printing-variables" title="Permanent link">&para;</a></h2>
+<p>We have now created a few <strong>variables</strong> which each hold their own <strong>value</strong>. Lets use these <strong>variables</strong> to <strong>print</strong> their <strong>values</strong> to the <strong>Output</strong> window! We can do this by putting each <strong>variable</strong> name into a <strong>print</strong> function.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Script</label><label for="__tabbed_1_2">Output</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Script</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">variable1</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">imAVariable</span> <span class="o">=</span> <span class="s2">&quot;Hi!&quot;</span>
+<span class="n">iAmAVariable</span> <span class="o">=</span> <span class="kc">true</span>
+<span class="n">imNothing</span> <span class="o">=</span> <span class="kc">nil</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">variable1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">imAVariable</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">iAmAVariable</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">imNothing</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code>03:49:43.359  10  -  Server - Script:6
+03:49:43.359  Hi!  -  Server - Script:7
+03:49:43.359  true  -  Server - Script:8
+03:49:43.359  nil  -  Server - Script:9
+</code></pre></div>
+</div>
+</div>
+</div>
+<p>We can see the value of each variable displayed in the <strong>Output</strong> window!</p>
+<h2 id="reassigning-variables">Reassigning Variables<a class="headerlink" href="#reassigning-variables" title="Permanent link">&para;</a></h2>
+<p>Rather than a <strong>variable</strong> only ever having one specific <strong>value</strong>, you can change the value to anything you want. Let's use our variable named <code>imNothing</code> and reassign its value to <code>10</code> after the <code>print</code> function call on line 9. We'll reassign its value and print it again.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Script</label><label for="__tabbed_2_2">Output</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Script</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">variable1</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">imAVariable</span> <span class="o">=</span> <span class="s2">&quot;Hi!&quot;</span>
+<span class="n">iAmAVariable</span> <span class="o">=</span> <span class="kc">true</span>
+<span class="n">imNothing</span> <span class="o">=</span> <span class="kc">nil</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">variable1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">imAVariable</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">iAmAVariable</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">imNothing</span><span class="p">)</span>
+
+<span class="n">imNothing</span> <span class="o">=</span> <span class="mi">10</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">imNothing</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code>03:49:43.359  10  -  Server - Script:6
+03:49:43.359  Hi!  -  Server - Script:7
+03:49:43.359  true  -  Server - Script:8
+03:49:43.359  nil  -  Server - Script:9
+03:49:43.359  10  -  Server - Script:13
+</code></pre></div>
+</div>
+</div>
+</div>
+<p>We can see that the first time we print the <code>imNothing</code> variable, <code>nil</code> is output, but once we <strong>reassign</strong> it to <code>10</code>, and print it again, <code>10</code> is now output.</p>
+<h2 id="scope">Scope<a class="headerlink" href="#scope" title="Permanent link">&para;</a></h2>
+<p>There are two types of <strong>scopes</strong> in Lua, <strong>Global</strong> and <strong>Local</strong>. Currently, all the variables we created are of the <strong>global</strong> scope, which <strong>99.9%</strong> of the time is <strong>not</strong> what you want.</p>
+<h3 id="local">Local<a class="headerlink" href="#local" title="Permanent link">&para;</a></h3>
+<p>Whenever we create a new variable, before typing the name, we should type the keyword <code>local</code>. Here's an example of how it should be written <code>local newVariable = 1</code>. We used the keyword <code>local</code> to specify the variable's <strong>scope</strong>.</p>
+<p>There is more to <strong>scope</strong> than just including a <strong>keyword</strong> when creating a <strong>variable</strong>. Although we haven't learned about <code>if-statements</code>, <code>functions</code>, or <code>loops</code> yet, these will be commonly used while you code. When thinking about the <strong>scope</strong>, think of <strong>containers</strong> or <strong>boxes</strong> which can hold things inside of them.</p>
+<figure>
+<p><img alt="Local Scope Demonstration" src="/img/courses/scripting/Local-Scope-Demonstartion.png" /></p>
+</figure>
+<p>Let's break apart the image above:</p>
+<ul>
+<li>We create <code>variable1</code> in <strong>Container 0</strong></li>
+<li>
+<p>We use <code>variable1</code> in <strong>Container 0</strong> with the <code>print()</code> function</p>
+</li>
+<li>
+<p>We then use an <code>if-statement</code> in <strong>Container 0</strong>, which now creates <strong>Container 1</strong></p>
+</li>
+<li>We create <code>variable2</code> in <strong>Container 1</strong></li>
+<li>
+<p>We use <code>variable1</code> &amp; <code>variable2</code> in <strong>Container 1</strong> with the <code>print()</code> function</p>
+</li>
+<li>
+<p>We then use an <code>if-statement</code> in <strong>Container 1</strong>, which now creates <strong>Container 2</strong></p>
+</li>
+<li>We create <code>variable3</code> in <strong>Container 2</strong></li>
+<li>We use <code>variable1</code>, <code>variable2</code>, &amp; <code>variable3</code> in <strong>Container 2</strong> with the <code>print()</code> function</li>
+</ul>
+<p>So remember, everytime we use an <code>if-statement</code>, we basically create a <strong>container</strong> inside of another <strong>container</strong>. The important lesson to understand is that each <strong>container</strong> can <strong>access</strong> <strong>variables</strong> that are <strong>inside</strong> the <strong>same container</strong> OR in <strong>previous containers</strong>!</p>
+<p>That might seem confusing, but let's use the image to better understand:</p>
+<ul>
+<li><code>variable1</code> is created in <strong>Container 0</strong> and can be used within <strong>Container 0</strong>, <strong>Container 1</strong> &amp; <strong>Container 2</strong></li>
+<li><code>variable2</code> is created in <strong>Container 1</strong> and can be used within <strong>Container 1</strong> &amp; <strong>Container 2</strong>, but <strong>not Container 0</strong></li>
+<li><code>variable3</code> is created in <strong>Container 2</strong> and can be used within <strong>Container 2</strong>, but <strong>not Container 0</strong> or <strong>Container 1</strong></li>
+</ul>
+<p>So <strong>local variables</strong> can be used within the same <strong>container</strong> they were created in and <strong>containers</strong> within their <strong>container</strong>. They <strong>cannot</strong> be used in <strong>containers</strong> outside of the one they were created in.</p>
+<h3 id="global">Global<a class="headerlink" href="#global" title="Permanent link">&para;</a></h3>
+<p>As originally stated, you most likely should <strong>never</strong> create <strong>Global</strong> scoped <strong>variables</strong>. With that being said, the reason you should learn about the <strong>Global</strong> scope is to get a better understanding and easily differentiate between <strong>Local</strong> &amp; <strong>Global</strong>.</p>
+<p>Instead of using the keyword <code>local</code> before the variable's name, you do not include any keywords. Here's an example of how it would be written <code>newVariable = 1</code>. Since we didn't specify the <strong>local</strong> scope with the <code>local</code> keyword, it's automatically assumed to be global.</p>
+<figure>
+<p><img alt="Global Scope Demonstration" src="/img/courses/scripting/Global-Scope-Demonstartion.png" /></p>
+</figure>
+<p>The image above looks similar to the one we saw in the <strong>Local</strong> lesson, but this time we use <strong>Global</strong> scoped variables. The <strong>containers</strong> are the same, but instead of <strong>variables</strong> being only accessible from their <strong>own containers</strong> and <strong>containers within</strong> their <strong>container</strong>, they can now be accessed from <strong>every container</strong>!</p>
+<p>This is why the <code>print()</code> functions no longer have yellow squiggly lines which indicate an error. The <code>print()</code> functions in <strong>Container 0</strong> are able to print <code>variable2</code> &amp; <code>variable3</code>, which aren't created within <strong>Container 0</strong>.</p>
+<p>You should almost <strong>never</strong> use <strong>Global</strong> scope on variables since they can be modified in more locations, it becomes <strong>hard to keep track</strong> of where <strong>changes</strong> are made. You might think the <strong>Global</strong> scope provides benefits over <strong>Local</strong>, which in some ways it does, but those do not outweigh the negatives.</p>
 <h2 id="what-we-learned">What we Learned<a class="headerlink" href="#what-we-learned" title="Permanent link">&para;</a></h2>
 <div class="admonition question">
 <p class="admonition-title">What we Learned</p>
 <ul>
-<li>How to create a new Game</li>
-<li>How to enable the commonly used Tools in the Studio</li>
+<li>What a variable is</li>
+<li>How to name a variable</li>
+<li>Which naming convention to use for naming variables</li>
+<li>How to give a variable a value</li>
+<li>How to private a variable's value</li>
+<li>How to reassign a variable to a different value</li>
+<li>What a scope is</li>
+<li>The different types of scopes</li>
+<li>Which scope variables should almost always be</li>
 </ul>
 </div>
 
@@ -1053,7 +1334,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: What is Luau" rel="prev">
+        <a href="../string-concatenation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: String Concatenation" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1062,20 +1343,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              What is Luau
+              String Concatenation
             </div>
           </div>
         </a>
       
       
         
-        <a href="../output/" class="md-footer__link md-footer__link--next" aria-label="Next: Output" rel="next">
+        <a href="../../../../handbook/" class="md-footer__link md-footer__link--next" aria-label="Next: The Roblox Scripting (Luau) Handbook" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Output
+              The Roblox Scripting (Luau) Handbook
             </div>
           </div>
           <div class="md-footer__button md-icon">
