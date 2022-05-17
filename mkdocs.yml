@@ -16,8 +16,11 @@ theme:
       toggle:
         icon: material/lightbulb
         name: Switch to light mode
+  font:
+    text: Roboto
 
   features:
+    - announce.dismiss
     - navigation.instant
     - navigation.tracking
     - navigation.tabs
@@ -28,6 +31,8 @@ theme:
 
 plugins:
   - search
+  - privacy:
+      enabled: !ENV [PRIVACY, false]
   - redirects:
       redirect_maps:
           'old.md': 'new.md'
@@ -40,7 +45,7 @@ extra:
   generator: false
   analytics:
     provider: google
-    property: G-XXXXXXXXXX
+    property: G-SBC5NW347G
   social:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/LearnRoblox
@@ -51,34 +56,59 @@ extra:
     - icon: fontawesome/brands/youtube
       link: https://YouTube.com/MonzterDev
       name: MonzterDev on YouTube
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
 
 copyright: NOT AFFILIATED WITH OR ENDORSED BY ROBLOX
 
 markdown_extensions:
   - toc:
       permalink: true
+  - attr_list
+  - md_in_html
   - meta
   - abbr
   - pymdownx.snippets
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.keys
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
 
 
 nav:
   - Home: index.md
   - Courses:
     - courses/index.md
-    # - Roblox Studio Basics:
-    #   - courses/roblox-studio-basics/index.md
-    #   - Create a New Place: courses/roblox-studio-basics/creating-a-new-place.md
     - Learn Scripting with Luau:
       - Introduction to Scripting:
         - courses/scripting/introduction-to-scripting/index.md
         - Setting Up: courses/scripting/introduction-to-scripting/setting-up.md
         - Output: courses/scripting/introduction-to-scripting/output.md
-        # - Creating a Script: courses/scripting/introduction-to-scripting/creating-a-script.md
+        - Creating a Script: courses/scripting/introduction-to-scripting/creating-a-script.md
+        - Running our First Script: courses/scripting/introduction-to-scripting/running-our-first-script.md
+        - Data Types: courses/scripting/introduction-to-scripting/data-types.md
+        - Using Math: courses/scripting/introduction-to-scripting/using-math.md
+        - String Concatenation: courses/scripting/introduction-to-scripting/string-concatenation.md
+        - Variables: courses/scripting/introduction-to-scripting/variables.md
+    # - Roblox Studio Basics:
+    #   - courses/roblox-studio-basics/index.md
+    #   - Create a New Place: courses/roblox-studio-basics/creating-a-new-place.md
+  - Handbook:
+    - handbook/index.md
+    - Getting Help: handbook/getting-help.md
+    - Comments: handbook/comments.md
 
   - About: about.md

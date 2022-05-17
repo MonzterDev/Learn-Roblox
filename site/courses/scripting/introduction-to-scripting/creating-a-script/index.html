@@ -10,21 +10,26 @@
       
         <link rel="canonical" href="https://learnroblox.org/courses/scripting/introduction-to-scripting/creating-a-script/">
       
+      
+        
+      
       <link rel="icon" href="../../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.11">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15+insiders-4.15.1">
     
     
       
-        <title>Creating a script - Learn Roblox</title>
+        <title>Creating a Script - Learn Roblox</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.8c5ef100.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6cd88726.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.9647289d.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.96b5c56e.min.css">
         
       
+      
+
     
     
     
@@ -37,7 +42,7 @@
       
     
     
-    <script>__md_scope=new URL("../../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -47,10 +52,13 @@
   
 
 
-  <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-XXXXXXXXXX"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&gtag("event","search",{search_term:this.value})}),"undefined"!=typeof location$&&location$.subscribe(function(e){gtag("config","G-XXXXXXXXXX",{page_path:e.pathname})})})</script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-SBC5NW347G"),document.addEventListener("DOMContentLoaded",function(){if(document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document.forms.feedback){var e,a=document.forms.feedback;for(e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}"undefined"!=typeof location$&&location$.subscribe(function(e){n("config","G-SBC5NW347G",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-SBC5NW347G",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
 
+  
+    <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
+  
 
+    
     
     
   </head>
@@ -67,6 +75,42 @@
   
     
     
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
       <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -75,7 +119,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#what-is-the-output" class="md-skip">
+        <a href="#what-is-a-script" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +152,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Creating a script
+              Creating a Script
             
           </span>
         </div>
@@ -188,43 +232,93 @@
     <ul class="md-tabs__list">
       
         
-  
-  
-
-
-  <li class="md-tabs__item">
-    <a href="../../../.." class="md-tabs__link">
-      Home
-    </a>
-  </li>
-
-      
-        
-  
-  
 
 
   
+    
+    
   
   
     <li class="md-tabs__item">
-      <a href="../../../" class="md-tabs__link">
-        Courses
+      <a href="../../../.." class="md-tabs__link">
+        
+  
+  Home
+
       </a>
     </li>
   
 
       
         
-  
-  
 
 
-  <li class="md-tabs__item">
-    <a href="../../../../about/" class="md-tabs__link">
-      About
-    </a>
-  </li>
+  
+    
+    
+      
+    
+  
+  
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../" class="md-tabs__link md-tabs__link--active">
+          
+  
+    
+  
+  Courses
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+
+
+  
+    
+    
+  
+  
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../handbook/" class="md-tabs__link">
+          
+  
+    
+  
+  Handbook
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+
+
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../about/" class="md-tabs__link">
+        
+  
+  About
+
+      </a>
+    </li>
+  
 
       
     </ul>
@@ -263,12 +357,18 @@
       
       
 
+
   
   
   
     <li class="md-nav__item">
       <a href="../../../.." class="md-nav__link">
-        Home
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+
       </a>
     </li>
   
@@ -278,14 +378,17 @@
       
       
 
-  
+
   
   
     
-    <li class="md-nav__item md-nav__item--nested">
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" data-md-state="indeterminate" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -300,10 +403,17 @@
       
         
         
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../">Courses</a>
+        <div class="md-nav__link md-nav__container">
+          <a href="../../../" class="md-nav__link ">
+            
+  
+  <span class="md-ellipsis">
+    Courses
+  </span>
+
+          </a>
           
-            <label for="__nav_2">
+            <label class="md-nav__link " for="__nav_2">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
@@ -322,12 +432,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" data-md-state="indeterminate" type="checkbox" id="__nav_2_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" checked>
       
       
       
@@ -337,7 +449,12 @@
       
       
         <label class="md-nav__link" for="__nav_2_2">
-          Learn Scripting with Luau
+          
+  
+  <span class="md-ellipsis">
+    Learn Scripting with Luau
+  </span>
+
           <span class="md-nav__icon md-icon"></span>
         </label>
       
@@ -352,12 +469,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2_1" data-md-state="indeterminate" type="checkbox" id="__nav_2_2_1" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2_1" type="checkbox" id="__nav_2_2_1" checked>
       
       
       
@@ -370,14 +489,33 @@
         
           
         
-      
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../">Introduction to Scripting</a>
           
-            <label for="__nav_2_2_1">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__container">
+          <a href="../" class="md-nav__link ">
+            
+  
+  <span class="md-ellipsis">
+    Introduction to Scripting
+  </span>
+
+          </a>
+          
+            <label class="md-nav__link " for="__nav_2_2_1">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
@@ -399,7 +537,12 @@
   
     <li class="md-nav__item">
       <a href="../setting-up/" class="md-nav__link">
-        Setting Up
+        
+  
+  <span class="md-ellipsis">
+    Setting Up
+  </span>
+
       </a>
     </li>
   
@@ -413,7 +556,221 @@
   
     <li class="md-nav__item">
       <a href="../output/" class="md-nav__link">
-        Output
+        
+  
+  <span class="md-ellipsis">
+    Output
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Creating a Script
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Creating a Script
+  </span>
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is a Script
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-do-we-put-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Where Do We Put Scripts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Where Do We Put Scripts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-are-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are Services
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#which-services-should-contain-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Which Services Should Contain Scripts
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-server-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a Server Script
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-we-learned" class="md-nav__link">
+    <span class="md-ellipsis">
+      What we Learned
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../running-our-first-script/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Running our First Script
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Types
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-math/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using Math
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../string-concatenation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    String Concatenation
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variables
+  </span>
+
       </a>
     </li>
   
@@ -444,12 +801,116 @@
       
       
 
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__container">
+          <a href="../../../../handbook/" class="md-nav__link ">
+            
+  
+  <span class="md-ellipsis">
+    Handbook
+  </span>
+
+          </a>
+          
+            <label class="md-nav__link " for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Handbook" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Handbook
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../handbook/getting-help/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Help
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../handbook/comments/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Comments
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+
   
   
   
     <li class="md-nav__item">
       <a href="../../../../about/" class="md-nav__link">
-        About
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+
       </a>
     </li>
   
@@ -480,22 +941,61 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-the-output" class="md-nav__link">
-    What is the Output
+  <a href="#what-is-a-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is a Script
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-command-bar" class="md-nav__link">
-    The Command Bar
+  <a href="#where-do-we-put-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Where Do We Put Scripts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Where Do We Put Scripts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-are-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are Services
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#which-services-should-contain-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Which Services Should Contain Scripts
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-server-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a Server Script
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#printing-to-the-output" class="md-nav__link">
-    Printing to the Output
+  <a href="#what-we-learned" class="md-nav__link">
+    <span class="md-ellipsis">
+      What we Learned
+    </span>
   </a>
   
 </li>
@@ -511,54 +1011,178 @@
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
+  
                 
 
 
-  <h1>Creating a script</h1>
+  <h1>Creating a Script</h1>
 
-<h2 id="what-is-the-output">What is the Output<a class="headerlink" href="#what-is-the-output" title="Permanent link">&para;</a></h2>
-<p>The <strong>Output</strong> is where the most important information will be displayed from our <strong>scripts</strong>! We'll constantly be using the <strong>output</strong> to view <strong>errors</strong> and <strong>debug</strong> our code.</p>
-<p>You should see the <strong>Output</strong> tab at the bottom of your <strong>Studio</strong> window.</p>
-<p><img src="/img/courses/scripting/Studio-Output.png" alt="Studio Output Tab"></p>
-<details class="warning">
-<summary>Don't see the <strong>Output</strong> tab?</summary>
-<p>If you <strong>do not</strong> see the <strong>Output</strong> tab, click on the <code>VIEW</code> button at the top of <strong>Studio</strong>, then click the <code>🖼 Output</code> button to enable it.</p>
-</details>
-<h2 id="the-command-bar">The Command Bar<a class="headerlink" href="#the-command-bar" title="Permanent link">&para;</a></h2>
-<p>The <strong>Command Bar</strong> can be used as another method of <strong>running code</strong> similar to <strong>scripts</strong>! The code written within the <strong>command bar</strong> is usually a <strong>small task</strong> or meant for <strong>testing</strong>.</p>
-<p>You should see the <strong>Command Bar</strong> tab at the bottom of your <strong>Studio</strong> window, directly below the <strong>Output</strong> tab.</p>
-<p><img src="/img/courses/scripting/Studio-Command-Bar.png" alt="Studio Output Tab"></p>
-<details class="warning">
-<summary>Don't see the <strong>Command Bar</strong> tab?</summary>
-<p>If you <strong>do not</strong> see the <strong>Command Bar</strong> tab, click on the <code>VIEW</code> button at the top of <strong>Studio</strong>, then click the <code>🖼 Command Bar</code> button to enable it.</p>
-</details>
-<h2 id="printing-to-the-output">Printing to the Output<a class="headerlink" href="#printing-to-the-output" title="Permanent link">&para;</a></h2>
-<p>What you're about to learn will be one of the most commonly used knowledge throughout your entire scripting journey! We can send a message to the <strong>Output</strong> by using the <strong>Command Bar</strong>.</p>
-<p><strong>Type</strong> the text below into your <strong>Command Bar</strong> and hit <strong>enter</strong>:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Text</label><label for="__tabbed_1_2">Output</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hey, I did it!&quot;</span><span class="p">)</span>
-</code></pre></div>
+<h2 id="what-is-a-script">What is a Script<a class="headerlink" href="#what-is-a-script" title="Permanent link">&para;</a></h2>
+<p>Similar to the <strong>Command Bar</strong> we used to run our code in the previous chapter, <strong>Scripts</strong> are the primary way of running code!</p>
+<p>There are <strong>3 types</strong> of <strong>Scripts</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Types</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="Server Script" src="/img/icons/Script.png" /> <code>Server Script</code></td>
+<td>Controlled and ran by the <strong>server</strong> aka <strong>our game</strong></td>
+</tr>
+<tr>
+<td><img alt="Local Script" src="/img/icons/LocalScript.png" /> <code>Local Script</code></td>
+<td>Controlled and ran by the <strong>client</strong> aka <strong>the player</strong></td>
+</tr>
+<tr>
+<td><img alt="Module Script" src="/img/icons/ModuleScript.png" /> <code>Module Script</code></td>
+<td>Controlled by either the <strong>server</strong> or <strong>client</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li><strong>Server Scripts</strong> are also commonly referred to as just <strong>Scripts</strong></li>
+<li><strong>Module Scripts</strong> are more complex, so we won't be incorporating or discussing them much until later in the course</li>
+</ul>
 </div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>00:00:00.000  &gt; print(&quot;Hey, I did it!&quot;)
--  Studio
-00:00:00.000  Hey, I did it!  -  Edit
-</code></pre></div>
+<h2 id="where-do-we-put-scripts">Where Do We Put Scripts<a class="headerlink" href="#where-do-we-put-scripts" title="Permanent link">&para;</a></h2>
+<p>Before we create a <strong>script</strong> we should get a general understanding of where to put our <strong>Local</strong> &amp; <strong>Server</strong> scripts.</p>
+<h3 id="what-are-services">What are Services<a class="headerlink" href="#what-are-services" title="Permanent link">&para;</a></h3>
+<p>If we look inside of our <strong>Explorer</strong> we can many <strong>Services</strong> listed. Each <strong>service</strong> provides some usage for us, especially when scripting.</p>
+<figure>
+<p><img alt="Services with the Explorer" src="/img/courses/scripting/Explorer-Services.png" /></p>
+</figure>
+<p>Here are a few examples that should make it easier to understand <strong>Services</strong>:</p>
+<ul>
+<li><strong>Workspace</strong>: Contains any objects that are to be rendered in the 3D world</li>
+<li><strong>Players</strong>: Contains Player objects for presently connected clients to a Roblox game server</li>
+<li><strong>Lighting</strong>: Controls the environmental lighting in a game</li>
+</ul>
+<p>If you look inside the <strong>Workspace</strong> service within your <strong>Explorer</strong> you should see a few parts which include the <code>Baseplate</code> &amp; <code>SpawnPoint</code> You can see these parts displayed directly in your Game's world currently.</p>
+<p>Whenever a player joins our game, the <strong>Players</strong> service will generate and hold a <strong>Player</strong> object with that specific player's data. This is extremely useful in scripting.</p>
+<p>You can also think of <strong>Services</strong> as a <strong>Folder</strong>. You expanded the <strong>Workspace</strong> service and saw a few parts inside of it, you could also do the same with <strong>Lighting</strong> and see objects inside of it as well.</p>
+<h3 id="which-services-should-contain-scripts">Which Services Should Contain Scripts<a class="headerlink" href="#which-services-should-contain-scripts" title="Permanent link">&para;</a></h3>
+<p>While you could store a <strong>Server Script</strong> in nearly any service and it would still function, the <strong>ServerScriptService</strong> is the primary service for this.</p>
+<p><strong>Local Scripts</strong> on the other hand need to be <strong>loaded</strong> by a <strong>client</strong> aka <strong>player</strong> to run. The <strong>ServerScriptService</strong> cannot be accessed by <strong>players</strong>, so you wouldn't normally store a <strong>Local Script</strong> there. The <strong>StarterPlayer/StarterPlayerScripts</strong> service is the primary service to store <strong>Local Scripts</strong> as that is its purpose. The <strong>Workspace</strong>, <strong>StarterPack</strong>, &amp; <strong>StarterGui</strong> services are also commonly used to hold <strong>Local Scripts</strong>.</p>
+<p>The table reflects what we talked about above.</p>
+<table>
+<thead>
+<tr>
+<th>Services</th>
+<th>Script Types</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Workspace</code></td>
+<td><img alt="Local Script" src="/img/icons/LocalScript.png" /> Local</td>
+</tr>
+<tr>
+<td><code>ServerScriptService</code></td>
+<td><img alt="Server Script" src="/img/icons/Script.png" /> Server</td>
+</tr>
+<tr>
+<td><code>StarterGui</code></td>
+<td><img alt="Local Script" src="/img/icons/LocalScript.png" /> Local</td>
+</tr>
+<tr>
+<td><code>StarterPack</code></td>
+<td><img alt="Local Script" src="/img/icons/LocalScript.png" /> Local</td>
+</tr>
+<tr>
+<td><code>StarterPlayer/StarterPlayerScripts</code></td>
+<td><img alt="Local Script" src="/img/icons/LocalScript.png" /> Local</td>
+</tr>
+</tbody>
+</table>
+<h2 id="creating-a-server-script">Creating a Server Script<a class="headerlink" href="#creating-a-server-script" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Put your Mouse over the <strong>ServerScriptService</strong> within the <strong>Explorer</strong></li>
+<li>Click the <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2Z"/></svg></span> icon to the right of the <strong>ServerScriptService</strong> name</li>
+<li>Search for "Script" in the popup box</li>
+<li>Click the <img alt="Server Script" src="/img/icons/Script.png" /><code>Script</code> button</li>
+</ol>
+<figure>
+<p><img alt="Create Script popup" src="/img/courses/scripting/Creating-a-Script.png" /></p>
+</figure>
+<p>Within <strong>ServerScriptService</strong> you should see the new <strong>Server Script</strong> which is named <code>Script</code>.</p>
+<figure>
+<p><img alt="Created Script" src="/img/courses/scripting/Created-Script.png" /></p>
+</figure>
+<h2 id="what-we-learned">What we Learned<a class="headerlink" href="#what-we-learned" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">What we Learned</p>
+<ul>
+<li>Basic understanding of what a Script is</li>
+<li>The 3 types of Scripts</li>
+<li>Where Scripts can be stored</li>
+<li>Very basic understanding of a Service</li>
+<li>How to create a Script</li>
+</ul>
 </div>
-</div>
-</div>
-<p>Upon hitting <strong>enter</strong>, you should see a similar message appear in your <strong>output</strong> as displayed in the <strong>Output</strong> tab above!</p>
-<p>We just used the <code>print()</code> function in the <strong>command bar</strong> to display <code>Hey, I did it!</code> in the <strong>Output</strong>. This is a simple example of using the <code>print()</code> function and we'll be using it a lot throughout the course.</p>
-<p>Congratulations you can now call yourself a <strong>scripter</strong> as you just wrote your first line of code and used a function!</p>
+
+  
+
+
+
 
               
+
+  <!-- Giscus -->
+  <h2 id="__comments">Comments</h2>
+  <script src="https://giscus.app/client.js"
+          data-repo="MonzterDev/Learn-Roblox"
+          data-repo-id="R_kgDOHRL1oQ"
+          data-category="Comments"
+          data-category-id="DIC_kwDOHRL1oc4CO7CG"
+          data-mapping="pathname"
+          data-reactions-enabled="1"
+          data-emit-metadata="1"
+          data-input-position="top"
+          data-theme="light"
+          data-lang="en"
+          data-loading="lazy"
+          crossorigin="anonymous"
+          async>
+  </script>
+  <!-- Reload on palette change -->
+  <script>
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object")
+      if (palette.color.scheme === "slate") {
+        var giscus = document.querySelector("script[src*=giscus]")
+        giscus.setAttribute("data-theme", "dark")
+      }
+
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate" ? "dark" : "light"
+
+          /* Instruct Giscus to change theme */
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
             </article>
+            
           </div>
         </div>
         
-          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+          <a href="#" class="md-top md-top--hidden md-icon" data-md-component="top">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
             Back to top
           </a>
@@ -566,6 +1190,41 @@
       </main>
       
         <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../output/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Output" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Output
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../running-our-first-script/" class="md-footer__link md-footer__link--next" aria-label="Next: Running our First Script" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Running our First Script
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -608,10 +1267,49 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.top", "navigation.expand", "navigation.indexes", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input type="checkbox" class="md-toggle" id="__settings">
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        <label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  <label class="md-button" for="__settings">Manage settings</label>
+  <button class="md-button md-button--primary">Accept</button>
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var form=document.forms.consent;form.addEventListener("submit",function(n){n.preventDefault(),__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(n){return[n,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["announce.dismiss", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.top", "navigation.expand", "navigation.indexes", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.ec8bae80.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.748e2769.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.2f76aa63.min.js"></script>
       
     
   </body>
