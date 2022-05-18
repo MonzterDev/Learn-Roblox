@@ -133,4 +133,4 @@ Whenever I ask a question in a **Discord**, I usually **copy/paste** it to multi
 
 Once you get an **answer** to your question, it's **important** to go back to the other **Discords** where you posted that question and **delete** it, so others **don't waste time** on your already answered question.
 
-If you missed it earlier, you can view our **recommended** [Discord Servers](/docs/handbook/getting-help.md#3-discord-communities)!
+If you missed it earlier, you can view our **recommended** [Discord Servers](#3-discord-communities)!
