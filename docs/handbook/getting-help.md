@@ -4,7 +4,7 @@ Finding a place where you can **ask questions** and receive **answers** to your 
 
 Let's go over a simple process to follow each time you run into an issue!
 
-### 1. Identify your issue
+### 1. Identify your Issue
 
 It might sound simple, but you should be able to directly **identify** and **articulate** the **issue** you're having. You'll find this challenging if you're a new Developer, but as you put in more time, you'll eventually be able to easily articulate your exact issue.
 
@@ -121,7 +121,7 @@ If you're still **unsure** of how this is done, while **writing** a **Discord me
 3. On the same line as the three backticks type `lua` (Make sure there is no space between the backticks and the word)
 4. Use ++shift+enter++ to create a new line
 5. Paste the code
-7. At the end of the last line of your code type three backticks (```)
+6. At the end of the last line of your code type three backticks (```)
 
 You can learn more about **Markdown** on **Discord** [here](https://support.discord.com/hc/en-us/articles/210298617-Markdown-Text-101-Chat-Formatting-Bold-Italic-Underline-)!
 

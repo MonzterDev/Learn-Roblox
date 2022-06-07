@@ -7,8 +7,7 @@ theme:
   # favicon: assets/logo.png
   custom_dir: overrides
   palette:
-    - primary: red
-      accent: blue
+    - scheme: roblox
       toggle:
         icon: material/lightbulb-outline
         name: Switch to dark mode
@@ -28,6 +27,9 @@ theme:
     - navigation.expand
     - navigation.indexes
     - toc.follow
+
+extra_css:
+  - stylesheets/extra.css
 
 plugins:
   - search
@@ -87,7 +89,6 @@ markdown_extensions:
         custom_icons:
           - overrides/.icons
 
-
 nav:
   - Home: index.md
   - Courses:
@@ -109,6 +110,6 @@ nav:
   - Handbook:
     - handbook/index.md
     - Getting Help: handbook/getting-help.md
-    - Comments: handbook/comments.md
+    - The Basics: handbook/the-basics.md
 
   - About: about.md
