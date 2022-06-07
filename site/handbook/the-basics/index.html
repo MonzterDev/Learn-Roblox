@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://learnroblox.org/handbook/comments/">
+        <link rel="canonical" href="https://learnroblox.org/handbook/the-basics/">
       
       
         
@@ -18,7 +18,7 @@
     
     
       
-        <title>Comments - Learn Roblox</title>
+        <title>The Basics - Learn Roblox</title>
       
     
     
@@ -41,6 +41,8 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -71,7 +73,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="red" data-md-color-accent="blue">
+    <body dir="ltr" data-md-color-scheme="roblox" data-md-color-primary="" data-md-color-accent="">
   
     
     
@@ -118,6 +120,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#variables" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -147,7 +154,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Comments
+              The Basics
             
           </span>
         </div>
@@ -158,7 +165,7 @@
         
           
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="" data-md-color-primary="red" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="roblox" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
@@ -779,14 +786,158 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    The Basics
+  </span>
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Comments
+    The Basics
   </span>
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#primitive-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primitive Types
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Primitive Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#string" class="md-nav__link">
+    <span class="md-ellipsis">
+      String
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#number" class="md-nav__link">
+    <span class="md-ellipsis">
+      Number
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boolean" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boolean
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#roblox-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Roblox Types
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#simple" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simple
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conditional-statements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conditional Statements
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -838,6 +989,131 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#primitive-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primitive Types
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Primitive Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#string" class="md-nav__link">
+    <span class="md-ellipsis">
+      String
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#number" class="md-nav__link">
+    <span class="md-ellipsis">
+      Number
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boolean" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boolean
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#roblox-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Roblox Types
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#simple" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simple
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conditional-statements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conditional Statements
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -850,9 +1126,132 @@
                 
 
 
-  <h1>Comments</h1>
+  <h1>The Basics</h1>
 
+<p>We'll cover most of the core concepts of <strong>Luau</strong> and <strong>Roblox Development</strong>.</p>
+<h2 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">&para;</a></h2>
+<p>Variables are written in the following format: <code>local nameOfVariable = "valueOfVariable"</code>.</p>
+<ul>
+<li><strong>local</strong> is the <strong>scope</strong> of the variable.</li>
+<li><strong>nameofVariable</strong> is the <strong>name</strong> of the variable.</li>
+<li><strong>"valueOfVariable"</strong> is the <strong>value</strong> of the variable.</li>
+</ul>
+<h3 id="types">Types<a class="headerlink" href="#types" title="Permanent link">&para;</a></h3>
+<p>A variable's type is based off its <strong>value</strong>. The <strong>type</strong> of a variable is important as it enables you to know how you can use that variable. For instance, you can only perform <strong>math operations</strong> on two <strong>number</strong> variables.</p>
+<h3 id="primitive-types">Primitive Types<a class="headerlink" href="#primitive-types" title="Permanent link">&para;</a></h3>
+<p>These types are standard <strong>Luau</strong> types, which are also commonly shared with other <strong>programming languages</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Example</th>
+<th>Info</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>string</code></td>
+<td>"StringType"</td>
+<td>Characters surrounded by <code>"</code>s</td>
+</tr>
+<tr>
+<td><code>number</code></td>
+<td>10.5</td>
+<td>Any number including whole numbers &amp; decimals</td>
+</tr>
+<tr>
+<td><code>boolean</code></td>
+<td>true</td>
+<td><code>true</code> or <code>false</code>, Similar to yes or no</td>
+</tr>
+<tr>
+<td><code>table</code></td>
+<td>{ }</td>
+<td>Array or Dictionary</td>
+</tr>
+<tr>
+<td><code>function</code></td>
+<td>function()</td>
+<td>A function</td>
+</tr>
+<tr>
+<td><code>nil</code></td>
+<td><code></code></td>
+<td>It means "nothing" or "does not exist"</td>
+</tr>
+</tbody>
+</table>
+<p>There is also <strong>userdata</strong> &amp; <strong>thread</strong>, but you'll likely never use these types.</p>
+<h4 id="string">String<a class="headerlink" href="#string" title="Permanent link">&para;</a></h4>
+<p>You can <strong>combine</strong> two strings using two <code>.</code>s between the strings.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Example</label><label for="__tabbed_1_2">Output</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">newString</span> <span class="o">=</span> <span class="s2">&quot;Hey I&#39;m&quot;</span><span class="o">..</span><span class="s2">&quot; pretty cool!&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">newString</span><span class="p">)</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>Hey I'm pretty cool!</p>
+</div>
+</div>
+</div>
+<h4 id="number">Number<a class="headerlink" href="#number" title="Permanent link">&para;</a></h4>
+<p>You can do <strong>math</strong> with two numbers by using any <strong>arithmetic symbols</strong> between the numbers.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Example</label><label for="__tabbed_2_2">Output</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">newMath</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">+</span> <span class="mi">10</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">newMath</span><span class="p">)</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>15</p>
+</div>
+</div>
+</div>
+<h4 id="boolean">Boolean<a class="headerlink" href="#boolean" title="Permanent link">&para;</a></h4>
+<p>You can use a <strong>conditional statement</strong> to create a boolean.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Example</label><label for="__tabbed_3_2">Output</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">newBool</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">+</span> <span class="mi">10</span> <span class="o">==</span> <span class="mi">15</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">newBool</span><span class="p">)</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>true</p>
+</div>
+</div>
+</div>
+<h3 id="roblox-types">Roblox Types<a class="headerlink" href="#roblox-types" title="Permanent link">&para;</a></h3>
+<p>Roblox adjusts their plethora of custom <strong>types</strong> often, but you always view the most up to date list <a href="https://developer.roblox.com/en-us/api-reference/data-types">here</a>!</p>
+<!-- | Type | Example | Info |
+| -         | -       | -     |
+| `Axes` | Axes.new() | Used for the ArcHandles class to control what rotation axes are currently enabled |
+| `BrickColor` | BirchColor.new(1) | Provides a predefined list of named colors |
+| `CatalogSearchParams` | CatalogSearchParams.new() | Specifying the parameters of a catalog search via `AvatarEditorService:SearchCatalog()` |
+| `CFrame` | CFrame.new() | Short for "coordinate frame" describes a 3D position and orientation |
+| `Color3` | Color3.new(255, 255, 255) | Describes a color using R, G and B components | -->
 
+<h3 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h3>
+<h4 id="simple">Simple<a class="headerlink" href="#simple" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">numberVariable</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="kd">local</span> <span class="n">stringVariable</span> <span class="o">=</span> <span class="s2">&quot;100&quot;</span>
+<span class="kd">local</span> <span class="n">booleanVariable</span> <span class="o">=</span> <span class="kc">true</span>
+<span class="kd">local</span> <span class="n">nilVariable</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="kd">local</span> <span class="n">nilVariable2</span>
+<span class="kd">local</span> <span class="n">tableArrayVariable</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;2&quot;</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="kc">true</span><span class="p">}</span>
+<span class="kd">local</span> <span class="n">tableDictionaryVariable</span> <span class="o">=</span> <span class="p">{</span><span class="n">first</span> <span class="o">=</span> <span class="s2">&quot;2&quot;</span><span class="p">,</span> <span class="mi">2</span> <span class="o">=</span> <span class="s2">&quot;3rd&quot;</span><span class="p">,</span> <span class="n">third</span> <span class="o">=</span> <span class="s2">&quot;two&quot;</span><span class="p">}</span>
+</code></pre></div>
+<h4 id="advanced">Advanced<a class="headerlink" href="#advanced" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">numberVariable</span> <span class="o">=</span> <span class="mi">1</span><span class="n">_000</span>
+<span class="kd">local</span> <span class="n">stringVariable</span> <span class="o">=</span> <span class="s2">&quot;100&quot;</span><span class="o">..</span><span class="s2">&quot; and two&quot;</span>
+<span class="kd">local</span> <span class="n">booleanVariable</span> <span class="o">=</span> <span class="n">numberVariable</span> <span class="o">==</span> <span class="mi">1</span><span class="n">_000</span>
+<span class="kd">local</span> <span class="n">nilVariable</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="kd">local</span> <span class="n">nilVariable2</span> <span class="o">=</span> <span class="n">nilVariable</span> <span class="ow">or</span> <span class="kc">nil</span>
+</code></pre></div>
+<h2 id="conditional-statements">Conditional Statements<a class="headerlink" href="#conditional-statements" title="Permanent link">&para;</a></h2>
 
   
 
