@@ -24,7 +24,6 @@ theme:
     - navigation.tracking
     - navigation.tabs
     - navigation.top
-    - navigation.expand
     - navigation.indexes
     - toc.follow
 
@@ -90,7 +89,7 @@ markdown_extensions:
           - overrides/.icons
 
 nav:
-  - Home: index.md
+  # - Home: index.md
   - Courses:
     - courses/index.md
     - Learn Scripting with Luau:
@@ -104,6 +103,10 @@ nav:
         - Using Math: courses/scripting/introduction-to-scripting/using-math.md
         - String Concatenation: courses/scripting/introduction-to-scripting/string-concatenation.md
         - Variables: courses/scripting/introduction-to-scripting/variables.md
+    # - Creating a Basic Obby:
+      # - courses/creating-a-basic-obby/index.md
+      # - 1. Creating a New Project: courses/creating-a-basic-obby/1-creating-a-new-project.md
+
     # - Roblox Studio Basics:
     #   - courses/roblox-studio-basics/index.md
     #   - Create a New Place: courses/roblox-studio-basics/creating-a-new-place.md
@@ -111,5 +114,6 @@ nav:
     - handbook/index.md
     - Getting Help: handbook/getting-help.md
     - The Basics: handbook/the-basics.md
+    - Lua to TypeScript: handbook/lua-to-ts.md
 
-  - About: about.md
+  # - About: about.md

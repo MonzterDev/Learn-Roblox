@@ -1,0 +1,1 @@
+This course will cover creating your first ever game, a basic **obstical course** also known as an **obby**!
