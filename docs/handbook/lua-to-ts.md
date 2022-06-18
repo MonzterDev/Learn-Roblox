@@ -27,7 +27,7 @@ You can use `let` for all variables, but it's best practice to use `const` when 
 ## Functions
 
 * Rather than using the `local` keyword when creating a Function, you don't need to define any scope.
-* Upon creating the Function, 4use curly braces `{}` to surround your code block.
+* Upon creating the Function, use curly braces `{}` to surround your code block.
 
 
 === "Lua"
