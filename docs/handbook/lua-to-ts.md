@@ -489,3 +489,164 @@ Reminder: Dictionaries & Maps are unordered, meaning when iterating through them
         print(entry[0], entry[1]) // "Key" 3   "key2" {}   "key3" "NewKey"
     }
     ```
+
+## Classes
+
+### Creating
+
+=== "Lua"
+
+    ``` lua
+    Example = {}
+    Example.__index = Example
+
+    function Example.new(player: Player)
+        local self = setmetatable({}, Inventory)
+
+        self.Player = player
+        self.UserId = player.UserId
+        return self
+    end
+
+    -- Create object
+    local object = Example.new(player)
+    ```
+
+=== "TypeScript"
+
+    ``` ts
+    class Exmaple {
+        player;
+        userId;
+
+        constructor(player: Player) {
+            this.player = player
+            this.userId = player.UserId
+            return this
+        }
+    }
+
+    // Create object
+    const object = new Example(player)
+    ```
+
+### Methods
+
+=== "Lua"
+
+    ``` lua
+    Example = {}
+    Example.__index = Example
+
+    function Example.new(player: Player)
+        local self = setmetatable({}, Inventory)
+
+        self.Player = player
+        self.UserId = player.UserId
+        return self
+    end
+
+    function Example:GetPlayerName()
+        return self.Player.Name
+    end
+
+    -- Create object
+    local object = Example.new(player)
+
+    object:GetPlayerName()
+    ```
+
+=== "TypeScript"
+
+    ``` ts
+    class Exmaple {
+        player;
+        userId;
+
+        constructor(player: Player) {
+            this.player = player
+            this.userId = player.UserId
+            return this
+        }
+
+        GetPlayerName() {
+            return this.player.Name
+        }
+    }
+
+    // Create object
+    const object = new Example(player)
+
+    object.GetPlayerName()
+    ```
+
+## Services
+
+You can get a **Service** similarly to the Lua method, by using the `.` operator on the `game` data model.
+
+Alternatively you can use the [services package](https://www.npmjs.com/package/@rbxts/services).
+
+=== "Lua"
+
+    ``` lua
+    local ReplicatedStorage = game:GetService('ReplicatedStorage')
+    ```
+
+=== "TypeScript"
+
+    ``` ts
+    const ReplicatedStorage = game.GetService('ReplicatedStorage')
+    ```
+
+=== "TypeScript (Alternative)"
+
+    ``` ts
+    import { ReplicatedStorage } from "@rbxts/services";
+    ```
+
+## Modules
+
+Rather than creating a Table and attaching Variables and Functions to it, you create Functions and Variables like normal, then prefix them with the keyword `export`.
+
+To use the Module in another Script, you **import** the Functions and Variables you want to use from the directory of the Module.
+
+=== "Lua"
+
+    ``` lua
+    -- Module Script named Config within ReplicatedStorage
+    local Config = {}
+
+    Config.List = {"Example"}
+
+    function Config.Print()
+        print("Hey!")
+    end
+
+    return Config
+
+    -- Requiring the Module Script in another Script
+    local ReplicatedStorage = game:GetService('ReplicatedStorage')
+
+    local Config = require(ReplicatedStorage.Config)
+
+    print(Config.List)
+    Config.Print()
+    ```
+
+=== "TypeScript"
+
+    ``` ts
+    // Module Script named Config within my Rojo Project folder called "Shared"
+    // which is is synced to the ReplicatedStorage
+    export const List = ["Example"];
+
+    export function Print() {
+        print("Hey!")
+    }
+
+    // Requiring the Module Script in another Script
+    import { List, Print } from "shared/Config"
+
+    print(List)
+    Print()
+    ```
