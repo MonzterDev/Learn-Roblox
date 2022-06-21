@@ -1,0 +1,1 @@
+Whenever a player passes through a certain amount of Jumps, we should add a Checkpoint, which will change their respawn location if they fall.

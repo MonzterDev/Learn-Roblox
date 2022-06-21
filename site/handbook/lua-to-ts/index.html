@@ -1062,6 +1062,57 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Methods
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Services
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modules
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1374,6 +1425,57 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Methods
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Services
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modules
+    </span>
+  </a>
   
 </li>
       
@@ -1879,6 +1981,156 @@
 <span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">entry</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">example</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="nx">print</span><span class="p">(</span><span class="nx">entry</span><span class="p">[</span><span class="mf">0</span><span class="p">],</span><span class="w"> </span><span class="nx">entry</span><span class="p">[</span><span class="mf">1</span><span class="p">])</span><span class="w"> </span><span class="c1">// &quot;Key&quot; 3   &quot;key2&quot; {}   &quot;key3&quot; &quot;NewKey&quot;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="classes">Classes<a class="headerlink" href="#classes" title="Permanent link">&para;</a></h2>
+<h3 id="creating_2">Creating<a class="headerlink" href="#creating_2" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="21:2"><input checked="checked" id="__tabbed_21_1" name="__tabbed_21" type="radio" /><input id="__tabbed_21_2" name="__tabbed_21" type="radio" /><div class="tabbed-labels"><label for="__tabbed_21_1">Lua</label><label for="__tabbed_21_2">TypeScript</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="n">Example</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">Example</span><span class="p">.</span><span class="n">__index</span> <span class="o">=</span> <span class="n">Example</span>
+
+<span class="kr">function</span> <span class="nc">Example</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="n">player</span><span class="p">:</span> <span class="n">Player</span><span class="p">)</span>
+    <span class="kd">local</span> <span class="n">self</span> <span class="o">=</span> <span class="nb">setmetatable</span><span class="p">({},</span> <span class="n">Inventory</span><span class="p">)</span>
+
+    <span class="n">self</span><span class="p">.</span><span class="n">Player</span> <span class="o">=</span> <span class="n">player</span>
+    <span class="n">self</span><span class="p">.</span><span class="n">UserId</span> <span class="o">=</span> <span class="n">player</span><span class="p">.</span><span class="n">UserId</span>
+    <span class="kr">return</span> <span class="n">self</span>
+<span class="kr">end</span>
+
+<span class="c1">-- Create object</span>
+<span class="kd">local</span> <span class="n">object</span> <span class="o">=</span> <span class="n">Example</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="n">player</span><span class="p">)</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="kd">class</span><span class="w"> </span><span class="nx">Exmaple</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nx">player</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="nx">userId</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="kr">constructor</span><span class="p">(</span><span class="nx">player</span><span class="o">:</span><span class="w"> </span><span class="kt">Player</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">player</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">player</span><span class="w"></span>
+<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">userId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">player</span><span class="p">.</span><span class="nx">UserId</span><span class="w"></span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="c1">// Create object</span><span class="w"></span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">object</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Example</span><span class="p">(</span><span class="nx">player</span><span class="p">)</span><span class="w"></span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="22:2"><input checked="checked" id="__tabbed_22_1" name="__tabbed_22" type="radio" /><input id="__tabbed_22_2" name="__tabbed_22" type="radio" /><div class="tabbed-labels"><label for="__tabbed_22_1">Lua</label><label for="__tabbed_22_2">TypeScript</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="n">Example</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">Example</span><span class="p">.</span><span class="n">__index</span> <span class="o">=</span> <span class="n">Example</span>
+
+<span class="kr">function</span> <span class="nc">Example</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="n">player</span><span class="p">:</span> <span class="n">Player</span><span class="p">)</span>
+    <span class="kd">local</span> <span class="n">self</span> <span class="o">=</span> <span class="nb">setmetatable</span><span class="p">({},</span> <span class="n">Inventory</span><span class="p">)</span>
+
+    <span class="n">self</span><span class="p">.</span><span class="n">Player</span> <span class="o">=</span> <span class="n">player</span>
+    <span class="n">self</span><span class="p">.</span><span class="n">UserId</span> <span class="o">=</span> <span class="n">player</span><span class="p">.</span><span class="n">UserId</span>
+    <span class="kr">return</span> <span class="n">self</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nc">Example</span><span class="p">:</span><span class="nf">GetPlayerName</span><span class="p">()</span>
+    <span class="kr">return</span> <span class="n">self</span><span class="p">.</span><span class="n">Player</span><span class="p">.</span><span class="n">Name</span>
+<span class="kr">end</span>
+
+<span class="c1">-- Create object</span>
+<span class="kd">local</span> <span class="n">object</span> <span class="o">=</span> <span class="n">Example</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="n">player</span><span class="p">)</span>
+
+<span class="n">object</span><span class="p">:</span><span class="n">GetPlayerName</span><span class="p">()</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="kd">class</span><span class="w"> </span><span class="nx">Exmaple</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nx">player</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="nx">userId</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="kr">constructor</span><span class="p">(</span><span class="nx">player</span><span class="o">:</span><span class="w"> </span><span class="kt">Player</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">player</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">player</span><span class="w"></span>
+<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">userId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">player</span><span class="p">.</span><span class="nx">UserId</span><span class="w"></span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="nx">GetPlayerName</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">player</span><span class="p">.</span><span class="nx">Name</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="c1">// Create object</span><span class="w"></span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">object</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Example</span><span class="p">(</span><span class="nx">player</span><span class="p">)</span><span class="w"></span>
+
+<span class="nx">object</span><span class="p">.</span><span class="nx">GetPlayerName</span><span class="p">()</span><span class="w"></span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="services">Services<a class="headerlink" href="#services" title="Permanent link">&para;</a></h2>
+<p>You can get a <strong>Service</strong> similarly to the Lua method, by using the <code>.</code> operator on the <code>game</code> data model.</p>
+<p>Alternatively you can use the <a href="https://www.npmjs.com/package/@rbxts/services">services package</a>.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="23:3"><input checked="checked" id="__tabbed_23_1" name="__tabbed_23" type="radio" /><input id="__tabbed_23_2" name="__tabbed_23" type="radio" /><input id="__tabbed_23_3" name="__tabbed_23" type="radio" /><div class="tabbed-labels"><label for="__tabbed_23_1">Lua</label><label for="__tabbed_23_2">TypeScript</label><label for="__tabbed_23_3">TypeScript (Alternative)</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">ReplicatedStorage</span> <span class="o">=</span> <span class="n">game</span><span class="p">:</span><span class="n">GetService</span><span class="p">(</span><span class="s1">&#39;ReplicatedStorage&#39;</span><span class="p">)</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">ReplicatedStorage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">game</span><span class="p">.</span><span class="nx">GetService</span><span class="p">(</span><span class="s1">&#39;ReplicatedStorage&#39;</span><span class="p">)</span><span class="w"></span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">ReplicatedStorage</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@rbxts/services&quot;</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="modules">Modules<a class="headerlink" href="#modules" title="Permanent link">&para;</a></h2>
+<p>Rather than creating a Table and attaching Variables and Functions to it, you create Functions and Variables like normal, then prefix them with the keyword <code>export</code>.</p>
+<p>To use the Module in another Script, you <strong>import</strong> the Functions and Variables you want to use from the directory of the Module.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="24:2"><input checked="checked" id="__tabbed_24_1" name="__tabbed_24" type="radio" /><input id="__tabbed_24_2" name="__tabbed_24" type="radio" /><div class="tabbed-labels"><label for="__tabbed_24_1">Lua</label><label for="__tabbed_24_2">TypeScript</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="c1">-- Module Script named Config within ReplicatedStorage</span>
+<span class="kd">local</span> <span class="n">Config</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="n">Config</span><span class="p">.</span><span class="n">List</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Example&quot;</span><span class="p">}</span>
+
+<span class="kr">function</span> <span class="nc">Config</span><span class="p">.</span><span class="nf">Print</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hey!&quot;</span><span class="p">)</span>
+<span class="kr">end</span>
+
+<span class="kr">return</span> <span class="n">Config</span>
+
+<span class="c1">-- Requiring the Module Script in another Script</span>
+<span class="kd">local</span> <span class="n">ReplicatedStorage</span> <span class="o">=</span> <span class="n">game</span><span class="p">:</span><span class="n">GetService</span><span class="p">(</span><span class="s1">&#39;ReplicatedStorage&#39;</span><span class="p">)</span>
+
+<span class="kd">local</span> <span class="n">Config</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="n">ReplicatedStorage</span><span class="p">.</span><span class="n">Config</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">Config</span><span class="p">.</span><span class="n">List</span><span class="p">)</span>
+<span class="n">Config</span><span class="p">.</span><span class="n">Print</span><span class="p">()</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="c1">// Module Script named Config within my Rojo Project folder called &quot;Shared&quot;</span><span class="w"></span>
+<span class="c1">// which is is synced to the ReplicatedStorage</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">List</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Example&quot;</span><span class="p">];</span><span class="w"></span>
+
+<span class="k">export</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">Print</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nx">print</span><span class="p">(</span><span class="s2">&quot;Hey!&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="c1">// Requiring the Module Script in another Script</span><span class="w"></span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">List</span><span class="p">,</span><span class="w"> </span><span class="nx">Print</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;shared/Config&quot;</span><span class="w"></span>
+
+<span class="nx">print</span><span class="p">(</span><span class="nx">List</span><span class="p">)</span><span class="w"></span>
+<span class="nx">Print</span><span class="p">()</span><span class="w"></span>
 </code></pre></div>
 </div>
 </div>
