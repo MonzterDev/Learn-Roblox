@@ -118,6 +118,10 @@
     
       
     
+      
+    
+      
+    
     
       <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
@@ -342,6 +346,8 @@
         
           
             
+          
+        
           
         
           
@@ -639,6 +645,123 @@
 
             
           
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_3" type="checkbox" id="__nav_1_3" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__container">
+          <a href="../../courses/creating-a-basic-obby/" class="md-nav__link ">
+            
+  
+  <span class="md-ellipsis">
+    Creating a Basic Obby
+  </span>
+
+          </a>
+          
+            <label class="md-nav__link " for="__nav_1_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Creating a Basic Obby" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_3">
+          <span class="md-nav__icon md-icon"></span>
+          Creating a Basic Obby
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../courses/creating-a-basic-obby/1-creating-a-new-project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1. Creating a New Project
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../courses/creating-a-basic-obby/2-creating-some-jumps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Creating Some Jumps
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../courses/creating-a-basic-obby/3-creating-checkpoints/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Creating Checkpoints
+  </span>
+
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -882,6 +1005,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Conditional Statements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rational-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rational Operators
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logical-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logical Operators
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1057,6 +1204,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Conditional Statements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rational-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rational Operators
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logical-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logical Operators
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1199,6 +1370,108 @@
 <span class="kd">local</span> <span class="n">nilVariable2</span> <span class="o">=</span> <span class="n">nilVariable</span> <span class="ow">or</span> <span class="kc">nil</span>
 </code></pre></div>
 <h2 id="conditional-statements">Conditional Statements<a class="headerlink" href="#conditional-statements" title="Permanent link">&para;</a></h2>
+<p>We can use <strong>conditionals</strong> to perform an action based on a specified scenario.</p>
+<p>Conditionals are written in the following format:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">number</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="kr">if</span> <span class="n">number</span> <span class="o">==</span> <span class="mi">10</span> <span class="kr">then</span> <span class="c1">-- Can be thought of as 10 = 10</span>
+    <span class="nb">print</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>
+<span class="kr">elseif</span> <span class="n">number</span> <span class="o">&lt;</span> <span class="mi">15</span> <span class="kr">then</span> <span class="c1">-- Can be thought of as 10 is less than 15</span>
+    <span class="nb">print</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>
+<span class="kr">else</span> <span class="c1">-- Can be thought of as any other &#39;condition&#39; besides the previous two</span>
+    <span class="nb">print</span><span class="p">(</span><span class="kc">false</span><span class="p">)</span>
+<span class="kr">end</span>
+</code></pre></div>
+<p>Conditionals are read from top to bottom. For example, first <code>number == 10</code> is read, since this is true <code>print(true)</code> will run, and nothing more will happen. If we want <code>number &lt; 15</code> to be checked, we must use a number between <code>11</code> and <code>14</code> so that <code>number == 10</code> will NOT be true.</p>
+<h3 id="rational-operators">Rational Operators<a class="headerlink" href="#rational-operators" title="Permanent link">&para;</a></h3>
+<p>We commonly use <strong>rational operators</strong> to create conditionals.</p>
+<div class="highlight"><pre><span></span><code><span class="kr">if</span> <span class="mi">10</span> <span class="o">==</span> <span class="mi">10</span> <span class="kr">then</span> <span class="c1">-- Can be thought of as 10 = 10 (True)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>
+<span class="kr">end</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Name</th>
+<th>Example</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>==</code></td>
+<td>Equal to</td>
+<td>if 1 == 2</td>
+<td>False</td>
+</tr>
+<tr>
+<td><code>~=</code></td>
+<td>Not Equal to</td>
+<td>if 1 ~= 2</td>
+<td>True</td>
+</tr>
+<tr>
+<td><code>&lt;</code></td>
+<td>Less than</td>
+<td>if 1 &lt; 2</td>
+<td>True</td>
+</tr>
+<tr>
+<td><code>&lt;=</code></td>
+<td>Less than or Equal to</td>
+<td>if 1 &lt;= 2</td>
+<td>True</td>
+</tr>
+<tr>
+<td><code>&gt;</code></td>
+<td>Greater than</td>
+<td>if 1 &gt; 2</td>
+<td>False</td>
+</tr>
+<tr>
+<td><code>&gt;=</code></td>
+<td>Greater than than or Equal to</td>
+<td>if 1 &gt;= 2</td>
+<td>False</td>
+</tr>
+</tbody>
+</table>
+<h3 id="logical-operators">Logical Operators<a class="headerlink" href="#logical-operators" title="Permanent link">&para;</a></h3>
+<p>We can also use <strong>logical operators</strong> to create slightly more complex conditionals.</p>
+<div class="highlight"><pre><span></span><code><span class="kr">if</span> <span class="ow">not</span> <span class="mi">10</span> <span class="o">==</span> <span class="mi">10</span> <span class="ow">or</span> <span class="ow">not</span> <span class="mi">1</span> <span class="o">==</span> <span class="mi">1</span> <span class="kr">then</span> <span class="c1">-- Can be thought of as 10 ~= 10 or 1 ~= 1 (False)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>
+<span class="kr">end</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Name</th>
+<th>Example</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>not</code></td>
+<td>Opposite</td>
+<td>if not 1 == 2</td>
+<td>True</td>
+</tr>
+<tr>
+<td><code>or</code></td>
+<td>Either</td>
+<td>if 1 == 2 or 1 == 1</td>
+<td>True</td>
+</tr>
+<tr>
+<td><code>and</code></td>
+<td>And</td>
+<td>if 1 == 1 and 1 == 2</td>
+<td>False</td>
+</tr>
+</tbody>
+</table>
 
   
 

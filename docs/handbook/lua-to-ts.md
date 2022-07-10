@@ -96,7 +96,7 @@ Basically a shorter way of writing out a function.
     }
     ```
 
-### Comparators
+### Operators
 
 | Symbol | Name | Example | Result |
 | -         | -       | -     | -   |
