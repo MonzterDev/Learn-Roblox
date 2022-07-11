@@ -108,6 +108,8 @@ nav:
       - 1. Creating a New Project: courses/creating-a-basic-obby/1-creating-a-new-project.md
       - 2. Creating Some Jumps: courses/creating-a-basic-obby/2-creating-some-jumps.md
       - 3. Creating Checkpoints: courses/creating-a-basic-obby/3-creating-checkpoints.md
+      - 4. Adding Invisible Jumps: courses/creating-a-basic-obby/4-adding-invisible-jumps.md
+      - 5. Adding Fake Walls: courses/creating-a-basic-obby/5-adding-fake-walls.md
 
     # - Roblox Studio Basics:
     #   - courses/roblox-studio-basics/index.md

@@ -39,7 +39,7 @@ Your game should look similar to the image below.
 
 ## Adding more Jumps
 
-We'll now add more Jumps to our game by using the Jump part we created.
+We'll now add more Jumps to our game by **duplicating** the Jump part we created.
 
 1. Duplicate the Jump part
 2. Move the new Jump further infront of the original Jump part
@@ -48,6 +48,7 @@ We'll now add more Jumps to our game by using the Jump part we created.
 !!! info
 
     * You can duplicate the part by Right-Clicking on the part and clicking "Duplicate" OR press `Ctrl+D` on your keyboard
+    * Duplicating allows us to retain all the same properties of the Part. For example, we'll keep the size property, which is useful here.
 
 Your game should look similar to the image below.
 <img src="/img/courses/creating-a-basic-obby/Roblox-Studio-Obby-Jumps.png" alt="Roblox Game showcasing the SpawnLocation & 5 Jumps ">

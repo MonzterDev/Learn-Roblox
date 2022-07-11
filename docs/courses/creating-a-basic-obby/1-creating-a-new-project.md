@@ -16,13 +16,24 @@ This will launch us into a new **Workspace**!
 
 We should now **save** and **publish** the **project** to Roblox, so we don't lose it.
 
-1. Select the `HOME` tab on the top of the screen (to the left of the `MODEL` tab)
-2. Click the :material-cog:`Game settings` button (to the left of the :material-account-multiple:`Team Test` button)
+<div class="annotate" markdown>
+
+<ol>
+<li>Select the <code>HOME</code> tab in the menu bar (1)</li>
+<li>Click the <code>Game settings</code> button in the ribbon bar (2)</li>
+</ol>
+
+</div>
+
+1. Checkout the [Studio Layout Diagram](../../glossary/studio-layout.md#menu-bar) to further understand the layout! <img src="/img/glossary/Roblox-Studio-Menu-Bar.png" alt="Roblox Studio Menu Bar">
+2. Checkout the [Studio Layout Diagram](../../glossary/studio-layout.md#ribbon-bar) to further understand the layout! <img src="/img/glossary/Roblox-Studio-Ribbon-Bar.png" alt="Roblox Studio Ribbon Bar">
 
 <img src="/img/courses/creating-a-basic-obby/Roblox-Studio-Home-Bar-Game-Settings.png" alt="Save to Roblox">
 
-3. Click the `Save to Roblox` button
-4. Change the "Name" field to whatever you want, and click the `Save` button
+<ol start="3">
+<li>Click the <code>Save to Roblox</code> button</li>
+<li>Change the "Name" field to whatever you want, and click the <code>Save</code> button</li>
+</ol>
 
 <img src="/img/courses/scripting/Save-To-Roblox.png" alt="Save to Roblox">
 
