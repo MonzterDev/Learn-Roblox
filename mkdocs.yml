@@ -87,6 +87,11 @@ markdown_extensions:
       options:
         custom_icons:
           - overrides/.icons
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 nav:
   # - Home: index.md
@@ -119,5 +124,7 @@ nav:
     - Getting Help: handbook/getting-help.md
     - The Basics: handbook/the-basics.md
     - Lua to TypeScript: handbook/lua-to-ts.md
+  - Lessons:
+    - Replication: lessons/replication.md
 
   # - About: about.md
