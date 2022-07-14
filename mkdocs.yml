@@ -126,5 +126,6 @@ nav:
     - Lua to TypeScript: handbook/lua-to-ts.md
   - Lessons:
     - Replication: lessons/replication.md
+    - Rojo: lessons/rojo.md
 
   # - About: about.md
