@@ -18,7 +18,7 @@ These types are standard **Luau** types, which are also commonly shared with oth
 
 | Type | Example | Info |
 | -         | -       | -     |
-| `string` | "StringType" | Characters surrounded by `"`s |
+| `string` | "StringType" | Characters surrounded by `"`, `'`, or `` `s |
 | `number` | 10.5 | Any number including whole numbers & decimals |
 | `boolean` | true | `true` or `false`, Similar to yes or no |
 | `table` | { } | Array or Dictionary |
@@ -33,6 +33,16 @@ You can **combine** two strings using two `.`s between the strings.
 === "Example"
     ``` lua
     local newString = "Hey I'm".." pretty cool!"
+    print(newString)
+    ```
+=== "Output"
+    Hey I'm pretty cool!
+
+Using **backticks** is another easy way of combining strings.
+=== "Example"
+    ``` lua
+    local firstString = "Hey I'm"
+    local newString = `{firstString} pretty cool!`
     print(newString)
     ```
 === "Output"
@@ -149,3 +159,9 @@ end
 | `not` | Opposite | if not 1 == 2 | True |
 | `or` | Either | if 1 == 2 or 1 == 1 | True |
 | `and` | And | if 1 == 1 and 1 == 2 | False |
+
+## Iteration
+
+For loops!
+
+Show For of iPairs & Pairs

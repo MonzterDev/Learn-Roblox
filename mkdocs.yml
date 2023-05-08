@@ -1,10 +1,10 @@
 site_name: Learn Roblox
-site_url: https://learnroblox.org/
+site_url: https://learnroblox.net/
 
 theme:
   name: material
-  # logo: assets/logo.png
-  # favicon: assets/logo.png
+  logo: /img/branding/Learn_Roblox_Logo_Full.png
+  favicon: /img/branding/Learn_Roblox_Logo_Full.png
   custom_dir: overrides
   palette:
     - scheme: roblox
@@ -29,16 +29,17 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/landing.css
 
 plugins:
   - search
-  - privacy:
-      enabled: !ENV [PRIVACY, false]
-  - redirects:
-      redirect_maps:
-          'old.md': 'new.md'
-          'old/file.md': 'new/file.md'
-          'some_file.md': 'http://external.url.com/foobar'
+  # - privacy:
+  #     enabled: !ENV [PRIVACY, false]
+  # - redirects:
+  #     redirect_maps:
+  #         'old.md': 'new.md'
+  #         'old/file.md': 'new/file.md'
+  #         'some_file.md': 'http://external.url.com/foobar'
 
 # https://pypi.org/project/mkdocs-redirects/
 
@@ -115,6 +116,9 @@ nav:
       - 3. Creating Checkpoints: courses/creating-a-basic-obby/3-creating-checkpoints.md
       - 4. Adding Invisible Jumps: courses/creating-a-basic-obby/4-adding-invisible-jumps.md
       - 5. Adding Fake Walls: courses/creating-a-basic-obby/5-adding-fake-walls.md
+    - Develop Using Rojo:
+      - courses/rojo/index.md
+      - 1. Installation: courses/rojo/installation.md
 
     # - Roblox Studio Basics:
     #   - courses/roblox-studio-basics/index.md
@@ -127,5 +131,6 @@ nav:
   - Lessons:
     - Replication: lessons/replication.md
     - Rojo: lessons/rojo.md
+    - Type Checking: lessons/type-checking.md
 
   # - About: about.md

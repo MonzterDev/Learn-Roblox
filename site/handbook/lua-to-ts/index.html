@@ -8,13 +8,16 @@
       
       
       
-        <link rel="canonical" href="https://learnroblox.org/handbook/lua-to-ts/">
+        <link rel="canonical" href="https://learnroblox.net/handbook/lua-to-ts/">
       
       
-        
+        <link rel="prev" href="../the-basics/">
       
-      <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15+insiders-4.15.1">
+      
+        <link rel="next" href="../../lessons/replication/">
+      
+      <link rel="icon" href="/img/branding/Learn_Roblox_Logo_Full.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.8">
     
     
       
@@ -22,11 +25,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.6cd88726.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ded33207.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.96b5c56e.min.css">
-        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
       
       
 
@@ -44,6 +46,8 @@
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="../../stylesheets/landing.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -54,7 +58,7 @@
   
 
 
-  <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-SBC5NW347G"),document.addEventListener("DOMContentLoaded",function(){if(document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document.forms.feedback){var e,a=document.forms.feedback;for(e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}"undefined"!=typeof location$&&location$.subscribe(function(e){n("config","G-SBC5NW347G",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-SBC5NW347G",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-SBC5NW347G"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-SBC5NW347G",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-SBC5NW347G",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
 
   
     <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
@@ -73,64 +77,8 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="roblox" data-md-color-primary="" data-md-color-accent="">
+    <body dir="ltr" data-md-color-scheme="roblox" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
-    
-    
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
     
     
       <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
@@ -157,8 +105,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="Learn Roblox" class="md-header__button md-logo" aria-label="Learn Roblox" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <img src="/img/branding/Learn_Roblox_Logo_Full.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -181,27 +128,31 @@
       </div>
     </div>
     
-      <form class="md-header__option" data-md-component="palette">
-        
+      
+        <form class="md-header__option" data-md-component="palette">
           
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="roblox" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+            
+              <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
+              </label>
+            
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="roblox" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+            
+              <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
+              </label>
+            
           
-            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
-            </label>
-          
-        
-          
-          
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
-          
-            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
-            </label>
-          
-        
-      </form>
+        </form>
+      
     
     
     
@@ -219,7 +170,7 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -231,7 +182,7 @@
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -250,81 +201,56 @@
           
             
 <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-tabs__inner md-grid">
+  <div class="md-grid">
     <ul class="md-tabs__list">
       
         
+  
+  
 
 
   
-    
-    
   
   
-    
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../courses/" class="md-tabs__link">
-          
-  
-    
-  
-  Courses
-
-        </a>
-      </li>
-    
+    <li class="md-tabs__item">
+      <a href="../../courses/" class="md-tabs__link">
+        Courses
+      </a>
+    </li>
   
 
       
         
+  
+  
+    
+  
 
 
   
-    
-    
-      
-    
   
   
-    
-    
-    
-      <li class="md-tabs__item">
-        <a href="../" class="md-tabs__link md-tabs__link--active">
-          
-  
-    
-  
-  Handbook
-
-        </a>
-      </li>
-    
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
+        Handbook
+      </a>
+    </li>
   
 
       
         
+  
+  
 
 
   
-    
-    
   
   
-    
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../lessons/replication/" class="md-tabs__link">
-          
-  
-  Lessons
-
-        </a>
-      </li>
-    
+    <li class="md-tabs__item">
+      <a href="../../lessons/replication/" class="md-tabs__link">
+        Lessons
+      </a>
+    </li>
   
 
       
@@ -351,8 +277,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Learn Roblox" class="md-nav__button md-logo" aria-label="Learn Roblox" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <img src="/img/branding/Learn_Roblox_Logo_Full.png" alt="logo">
 
     </a>
     Learn Roblox
@@ -364,7 +289,6 @@
       
       
 
-
   
   
   
@@ -372,8 +296,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
       
       
         
@@ -385,27 +310,22 @@
         
           
         
-      
-      
-        
-        
-        <div class="md-nav__link md-nav__container">
-          <a href="../../courses/" class="md-nav__link ">
-            
-  
-  <span class="md-ellipsis">
-    Courses
-  </span>
-
-          </a>
           
-            <label class="md-nav__link " for="__nav_1">
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../courses/">Courses</a>
+          
+            <label for="__nav_1">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
-      <nav class="md-nav" aria-label="Courses" data-md-level="1">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_1">
           <span class="md-nav__icon md-icon"></span>
           Courses
@@ -423,8 +343,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_2" type="checkbox" id="__nav_1_2" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" >
       
       
         
@@ -432,17 +353,12 @@
         
       
       
-        <label class="md-nav__link" for="__nav_1_2">
-          
-  
-  <span class="md-ellipsis">
-    Learn Scripting with Luau
-  </span>
-
+        <label class="md-nav__link" for="__nav_1_2" id="__nav_1_2_label" tabindex="0">
+          Learn Scripting with Luau
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Learn Scripting with Luau" data-md-level="2">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_1_2">
           <span class="md-nav__icon md-icon"></span>
           Learn Scripting with Luau
@@ -458,8 +374,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_2_1" type="checkbox" id="__nav_1_2_1" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2_1" >
       
       
         
@@ -487,23 +404,16 @@
       
         
         
-        <div class="md-nav__link md-nav__container">
-          <a href="../../courses/scripting/introduction-to-scripting/" class="md-nav__link ">
-            
-  
-  <span class="md-ellipsis">
-    Introduction to Scripting
-  </span>
-
-          </a>
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../courses/scripting/introduction-to-scripting/">Introduction to Scripting</a>
           
-            <label class="md-nav__link " for="__nav_1_2_1">
+            <label for="__nav_1_2_1">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
-      <nav class="md-nav" aria-label="Introduction to Scripting" data-md-level="3">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_2_1_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_1_2_1">
           <span class="md-nav__icon md-icon"></span>
           Introduction to Scripting
@@ -519,12 +429,7 @@
   
     <li class="md-nav__item">
       <a href="../../courses/scripting/introduction-to-scripting/setting-up/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Setting Up
-  </span>
-
+        Setting Up
       </a>
     </li>
   
@@ -538,12 +443,7 @@
   
     <li class="md-nav__item">
       <a href="../../courses/scripting/introduction-to-scripting/output/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Output
-  </span>
-
+        Output
       </a>
     </li>
   
@@ -557,12 +457,7 @@
   
     <li class="md-nav__item">
       <a href="../../courses/scripting/introduction-to-scripting/creating-a-script/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Creating a Script
-  </span>
-
+        Creating a Script
       </a>
     </li>
   
@@ -576,12 +471,7 @@
   
     <li class="md-nav__item">
       <a href="../../courses/scripting/introduction-to-scripting/running-our-first-script/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Running our First Script
-  </span>
-
+        Running our First Script
       </a>
     </li>
   
@@ -595,12 +485,7 @@
   
     <li class="md-nav__item">
       <a href="../../courses/scripting/introduction-to-scripting/data-types/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Data Types
-  </span>
-
+        Data Types
       </a>
     </li>
   
@@ -614,12 +499,7 @@
   
     <li class="md-nav__item">
       <a href="../../courses/scripting/introduction-to-scripting/using-math/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Using Math
-  </span>
-
+        Using Math
       </a>
     </li>
   
@@ -633,12 +513,7 @@
   
     <li class="md-nav__item">
       <a href="../../courses/scripting/introduction-to-scripting/string-concatenation/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    String Concatenation
-  </span>
-
+        String Concatenation
       </a>
     </li>
   
@@ -652,12 +527,7 @@
   
     <li class="md-nav__item">
       <a href="../../courses/scripting/introduction-to-scripting/variables/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Variables
-  </span>
-
+        Variables
       </a>
     </li>
   
@@ -687,8 +557,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_3" type="checkbox" id="__nav_1_3" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" >
       
       
         
@@ -710,23 +581,16 @@
       
         
         
-        <div class="md-nav__link md-nav__container">
-          <a href="../../courses/creating-a-basic-obby/" class="md-nav__link ">
-            
-  
-  <span class="md-ellipsis">
-    Creating a Basic Obby
-  </span>
-
-          </a>
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../courses/creating-a-basic-obby/">Creating a Basic Obby</a>
           
-            <label class="md-nav__link " for="__nav_1_3">
+            <label for="__nav_1_3">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
-      <nav class="md-nav" aria-label="Creating a Basic Obby" data-md-level="2">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_1_3">
           <span class="md-nav__icon md-icon"></span>
           Creating a Basic Obby
@@ -742,12 +606,7 @@
   
     <li class="md-nav__item">
       <a href="../../courses/creating-a-basic-obby/1-creating-a-new-project/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    1. Creating a New Project
-  </span>
-
+        1. Creating a New Project
       </a>
     </li>
   
@@ -761,12 +620,7 @@
   
     <li class="md-nav__item">
       <a href="../../courses/creating-a-basic-obby/2-creating-some-jumps/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    2. Creating Some Jumps
-  </span>
-
+        2. Creating Some Jumps
       </a>
     </li>
   
@@ -780,12 +634,7 @@
   
     <li class="md-nav__item">
       <a href="../../courses/creating-a-basic-obby/3-creating-checkpoints/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    3. Creating Checkpoints
-  </span>
-
+        3. Creating Checkpoints
       </a>
     </li>
   
@@ -799,12 +648,7 @@
   
     <li class="md-nav__item">
       <a href="../../courses/creating-a-basic-obby/4-adding-invisible-jumps/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    4. Adding Invisible Jumps
-  </span>
-
+        4. Adding Invisible Jumps
       </a>
     </li>
   
@@ -818,12 +662,71 @@
   
     <li class="md-nav__item">
       <a href="../../courses/creating-a-basic-obby/5-adding-fake-walls/" class="md-nav__link">
-        
+        5. Adding Fake Walls
+      </a>
+    </li>
   
-  <span class="md-ellipsis">
-    5. Adding Fake Walls
-  </span>
 
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../courses/rojo/">Develop Using Rojo</a>
+          
+            <label for="__nav_1_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_1_4">
+          <span class="md-nav__icon md-icon"></span>
+          Develop Using Rojo
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../courses/rojo/installation/" class="md-nav__link">
+        1. Installation
       </a>
     </li>
   
@@ -847,7 +750,6 @@
       
       
 
-
   
   
     
@@ -857,8 +759,9 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
       
       
         
@@ -876,23 +779,16 @@
       
         
         
-        <div class="md-nav__link md-nav__container">
-          <a href="../" class="md-nav__link ">
-            
-  
-  <span class="md-ellipsis">
-    Handbook
-  </span>
-
-          </a>
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../">Handbook</a>
           
-            <label class="md-nav__link " for="__nav_2">
+            <label for="__nav_2">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
-      <nav class="md-nav" aria-label="Handbook" data-md-level="1">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Handbook
@@ -908,12 +804,7 @@
   
     <li class="md-nav__item">
       <a href="../getting-help/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Getting Help
-  </span>
-
+        Getting Help
       </a>
     </li>
   
@@ -927,12 +818,7 @@
   
     <li class="md-nav__item">
       <a href="../the-basics/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    The Basics
-  </span>
-
+        The Basics
       </a>
     </li>
   
@@ -948,27 +834,17 @@
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Lua to TypeScript
-  </span>
-
+          Lua to TypeScript
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    Lua to TypeScript
-  </span>
-
+        Lua to TypeScript
       </a>
       
         
@@ -986,18 +862,14 @@
       
         <li class="md-nav__item">
   <a href="#variables" class="md-nav__link">
-    <span class="md-ellipsis">
-      Variables
-    </span>
+    Variables
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#functions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Functions
-    </span>
+    Functions
   </a>
   
     <nav class="md-nav" aria-label="Functions">
@@ -1005,9 +877,7 @@
         
           <li class="md-nav__item">
   <a href="#arrow-functions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Arrow Functions
-    </span>
+    Arrow Functions
   </a>
   
 </li>
@@ -1019,9 +889,7 @@
       
         <li class="md-nav__item">
   <a href="#conditions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conditions
-    </span>
+    Conditions
   </a>
   
     <nav class="md-nav" aria-label="Conditions">
@@ -1029,9 +897,7 @@
         
           <li class="md-nav__item">
   <a href="#operators" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operators
-    </span>
+    Operators
   </a>
   
 </li>
@@ -1043,27 +909,21 @@
       
         <li class="md-nav__item">
   <a href="#creating-instances" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creating Instances
-    </span>
+    Creating Instances
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#method-calls" class="md-nav__link">
-    <span class="md-ellipsis">
-      Method Calls
-    </span>
+    Method Calls
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#loops" class="md-nav__link">
-    <span class="md-ellipsis">
-      Loops
-    </span>
+    Loops
   </a>
   
     <nav class="md-nav" aria-label="Loops">
@@ -1071,9 +931,7 @@
         
           <li class="md-nav__item">
   <a href="#for" class="md-nav__link">
-    <span class="md-ellipsis">
-      For
-    </span>
+    For
   </a>
   
     <nav class="md-nav" aria-label="For">
@@ -1081,18 +939,14 @@
         
           <li class="md-nav__item">
   <a href="#simple" class="md-nav__link">
-    <span class="md-ellipsis">
-      Simple
-    </span>
+    Simple
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#advanced" class="md-nav__link">
-    <span class="md-ellipsis">
-      Advanced
-    </span>
+    Advanced
   </a>
   
 </li>
@@ -1104,18 +958,14 @@
         
           <li class="md-nav__item">
   <a href="#while" class="md-nav__link">
-    <span class="md-ellipsis">
-      While
-    </span>
+    While
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#iterables" class="md-nav__link">
-    <span class="md-ellipsis">
-      Iterables
-    </span>
+    Iterables
   </a>
   
 </li>
@@ -1127,9 +977,7 @@
       
         <li class="md-nav__item">
   <a href="#tables-arrays-dictionaries" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tables, Arrays, &amp; Dictionaries
-    </span>
+    Tables, Arrays, &amp; Dictionaries
   </a>
   
     <nav class="md-nav" aria-label="Tables, Arrays, &amp; Dictionaries">
@@ -1137,9 +985,7 @@
         
           <li class="md-nav__item">
   <a href="#array" class="md-nav__link">
-    <span class="md-ellipsis">
-      Array
-    </span>
+    Array
   </a>
   
     <nav class="md-nav" aria-label="Array">
@@ -1147,45 +993,35 @@
         
           <li class="md-nav__item">
   <a href="#creating" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creating
-    </span>
+    Creating
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#writing-into" class="md-nav__link">
-    <span class="md-ellipsis">
-      Writing Into
-    </span>
+    Writing Into
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#reading-from" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reading From
-    </span>
+    Reading From
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#removing-pair" class="md-nav__link">
-    <span class="md-ellipsis">
-      Removing Pair
-    </span>
+    Removing Pair
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#iterating" class="md-nav__link">
-    <span class="md-ellipsis">
-      Iterating
-    </span>
+    Iterating
   </a>
   
 </li>
@@ -1197,9 +1033,7 @@
         
           <li class="md-nav__item">
   <a href="#dictionaries" class="md-nav__link">
-    <span class="md-ellipsis">
-      Dictionaries
-    </span>
+    Dictionaries
   </a>
   
     <nav class="md-nav" aria-label="Dictionaries">
@@ -1207,45 +1041,35 @@
         
           <li class="md-nav__item">
   <a href="#creating_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creating
-    </span>
+    Creating
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#writing-into_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Writing Into
-    </span>
+    Writing Into
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#reading-from_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reading From
-    </span>
+    Reading From
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#removing-pair_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Removing Pair
-    </span>
+    Removing Pair
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#iterating_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Iterating
-    </span>
+    Iterating
   </a>
   
 </li>
@@ -1262,9 +1086,7 @@
       
         <li class="md-nav__item">
   <a href="#classes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Classes
-    </span>
+    Classes
   </a>
   
     <nav class="md-nav" aria-label="Classes">
@@ -1272,18 +1094,14 @@
         
           <li class="md-nav__item">
   <a href="#creating_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creating
-    </span>
+    Creating
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#methods" class="md-nav__link">
-    <span class="md-ellipsis">
-      Methods
-    </span>
+    Methods
   </a>
   
 </li>
@@ -1295,18 +1113,14 @@
       
         <li class="md-nav__item">
   <a href="#services" class="md-nav__link">
-    <span class="md-ellipsis">
-      Services
-    </span>
+    Services
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#modules" class="md-nav__link">
-    <span class="md-ellipsis">
-      Modules
-    </span>
+    Modules
   </a>
   
 </li>
@@ -1330,7 +1144,6 @@
       
       
 
-
   
   
   
@@ -1338,8 +1151,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
       
       
         
@@ -1347,19 +1161,16 @@
         
           
         
-      
-      
-        <label class="md-nav__link" for="__nav_3">
           
-  
-  <span class="md-ellipsis">
-    Lessons
-  </span>
-
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Lessons
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Lessons" data-md-level="1">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           Lessons
@@ -1373,12 +1184,7 @@
   
     <li class="md-nav__item">
       <a href="../../lessons/replication/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Replication
-  </span>
-
+        Replication
       </a>
     </li>
   
@@ -1392,12 +1198,21 @@
   
     <li class="md-nav__item">
       <a href="../../lessons/rojo/" class="md-nav__link">
-        
+        Rojo
+      </a>
+    </li>
   
-  <span class="md-ellipsis">
-    Rojo
-  </span>
 
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lessons/type-checking/" class="md-nav__link">
+        Type Checking
       </a>
     </li>
   
@@ -1436,18 +1251,14 @@
       
         <li class="md-nav__item">
   <a href="#variables" class="md-nav__link">
-    <span class="md-ellipsis">
-      Variables
-    </span>
+    Variables
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#functions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Functions
-    </span>
+    Functions
   </a>
   
     <nav class="md-nav" aria-label="Functions">
@@ -1455,9 +1266,7 @@
         
           <li class="md-nav__item">
   <a href="#arrow-functions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Arrow Functions
-    </span>
+    Arrow Functions
   </a>
   
 </li>
@@ -1469,9 +1278,7 @@
       
         <li class="md-nav__item">
   <a href="#conditions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conditions
-    </span>
+    Conditions
   </a>
   
     <nav class="md-nav" aria-label="Conditions">
@@ -1479,9 +1286,7 @@
         
           <li class="md-nav__item">
   <a href="#operators" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operators
-    </span>
+    Operators
   </a>
   
 </li>
@@ -1493,27 +1298,21 @@
       
         <li class="md-nav__item">
   <a href="#creating-instances" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creating Instances
-    </span>
+    Creating Instances
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#method-calls" class="md-nav__link">
-    <span class="md-ellipsis">
-      Method Calls
-    </span>
+    Method Calls
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#loops" class="md-nav__link">
-    <span class="md-ellipsis">
-      Loops
-    </span>
+    Loops
   </a>
   
     <nav class="md-nav" aria-label="Loops">
@@ -1521,9 +1320,7 @@
         
           <li class="md-nav__item">
   <a href="#for" class="md-nav__link">
-    <span class="md-ellipsis">
-      For
-    </span>
+    For
   </a>
   
     <nav class="md-nav" aria-label="For">
@@ -1531,18 +1328,14 @@
         
           <li class="md-nav__item">
   <a href="#simple" class="md-nav__link">
-    <span class="md-ellipsis">
-      Simple
-    </span>
+    Simple
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#advanced" class="md-nav__link">
-    <span class="md-ellipsis">
-      Advanced
-    </span>
+    Advanced
   </a>
   
 </li>
@@ -1554,18 +1347,14 @@
         
           <li class="md-nav__item">
   <a href="#while" class="md-nav__link">
-    <span class="md-ellipsis">
-      While
-    </span>
+    While
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#iterables" class="md-nav__link">
-    <span class="md-ellipsis">
-      Iterables
-    </span>
+    Iterables
   </a>
   
 </li>
@@ -1577,9 +1366,7 @@
       
         <li class="md-nav__item">
   <a href="#tables-arrays-dictionaries" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tables, Arrays, &amp; Dictionaries
-    </span>
+    Tables, Arrays, &amp; Dictionaries
   </a>
   
     <nav class="md-nav" aria-label="Tables, Arrays, &amp; Dictionaries">
@@ -1587,9 +1374,7 @@
         
           <li class="md-nav__item">
   <a href="#array" class="md-nav__link">
-    <span class="md-ellipsis">
-      Array
-    </span>
+    Array
   </a>
   
     <nav class="md-nav" aria-label="Array">
@@ -1597,45 +1382,35 @@
         
           <li class="md-nav__item">
   <a href="#creating" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creating
-    </span>
+    Creating
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#writing-into" class="md-nav__link">
-    <span class="md-ellipsis">
-      Writing Into
-    </span>
+    Writing Into
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#reading-from" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reading From
-    </span>
+    Reading From
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#removing-pair" class="md-nav__link">
-    <span class="md-ellipsis">
-      Removing Pair
-    </span>
+    Removing Pair
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#iterating" class="md-nav__link">
-    <span class="md-ellipsis">
-      Iterating
-    </span>
+    Iterating
   </a>
   
 </li>
@@ -1647,9 +1422,7 @@
         
           <li class="md-nav__item">
   <a href="#dictionaries" class="md-nav__link">
-    <span class="md-ellipsis">
-      Dictionaries
-    </span>
+    Dictionaries
   </a>
   
     <nav class="md-nav" aria-label="Dictionaries">
@@ -1657,45 +1430,35 @@
         
           <li class="md-nav__item">
   <a href="#creating_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creating
-    </span>
+    Creating
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#writing-into_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Writing Into
-    </span>
+    Writing Into
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#reading-from_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reading From
-    </span>
+    Reading From
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#removing-pair_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Removing Pair
-    </span>
+    Removing Pair
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#iterating_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Iterating
-    </span>
+    Iterating
   </a>
   
 </li>
@@ -1712,9 +1475,7 @@
       
         <li class="md-nav__item">
   <a href="#classes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Classes
-    </span>
+    Classes
   </a>
   
     <nav class="md-nav" aria-label="Classes">
@@ -1722,18 +1483,14 @@
         
           <li class="md-nav__item">
   <a href="#creating_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creating
-    </span>
+    Creating
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#methods" class="md-nav__link">
-    <span class="md-ellipsis">
-      Methods
-    </span>
+    Methods
   </a>
   
 </li>
@@ -1745,18 +1502,14 @@
       
         <li class="md-nav__item">
   <a href="#services" class="md-nav__link">
-    <span class="md-ellipsis">
-      Services
-    </span>
+    Services
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#modules" class="md-nav__link">
-    <span class="md-ellipsis">
-      Modules
-    </span>
+    Modules
   </a>
   
 </li>
@@ -1769,10 +1522,11 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
+                  
 
 
   <h1>Lua to TypeScript</h1>
@@ -1789,11 +1543,11 @@
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;MyName&quot;</span><span class="w"></span>
-<span class="kd">let</span><span class="w"> </span><span class="nx">secondName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;MySecondName&quot;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;MyName&quot;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">secondName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;MySecondName&quot;</span>
 
-<span class="nx">secondName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;NewName&quot;</span><span class="w"> </span><span class="c1">// This does work</span><span class="w"></span>
-<span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;NewName&quot;</span><span class="w"> </span><span class="c1">// This does not work because it&#39;s a const</span><span class="w"></span>
+<span class="nx">secondName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;NewName&quot;</span><span class="w"> </span><span class="c1">// This does work</span>
+<span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;NewName&quot;</span><span class="w"> </span><span class="c1">// This does not work because it&#39;s a const</span>
 </code></pre></div>
 </div>
 </div>
@@ -1812,9 +1566,9 @@
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">TestFunction</span><span class="p">(</span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">print</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">TestFunction</span><span class="p">(</span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">print</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>
+<span class="p">}</span>
 </code></pre></div>
 </div>
 </div>
@@ -1830,11 +1584,11 @@
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">TestFunction</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">print</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">TestFunction</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">print</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>
+<span class="p">}</span>
 
-<span class="nx">TestFunction</span><span class="p">(</span><span class="s2">&quot;Test&quot;</span><span class="p">)</span><span class="w"> </span><span class="c1">// Calls the function</span><span class="w"></span>
+<span class="nx">TestFunction</span><span class="p">(</span><span class="s2">&quot;Test&quot;</span><span class="p">)</span><span class="w"> </span><span class="c1">// Calls the function</span>
 </code></pre></div>
 </div>
 </div>
@@ -1854,14 +1608,14 @@
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;MyName&quot;</span><span class="w"></span>
-<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">name</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">&quot;MyName&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">print</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">name</span><span class="w"> </span><span class="o">!==</span><span class="w"> </span><span class="s2">&quot;MyName&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">print</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">print</span><span class="p">(</span><span class="nx">name</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;MyName&quot;</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">name</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">&quot;MyName&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">print</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">name</span><span class="w"> </span><span class="o">!==</span><span class="w"> </span><span class="s2">&quot;MyName&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">print</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">print</span><span class="p">(</span><span class="nx">name</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre></div>
 </div>
 </div>
@@ -1924,8 +1678,8 @@
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">folder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Instance</span><span class="p">(</span><span class="s2">&quot;Folder&quot;</span><span class="p">)</span><span class="w"></span>
-<span class="nx">folder</span><span class="p">.</span><span class="nx">Name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Test&quot;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">folder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Instance</span><span class="p">(</span><span class="s2">&quot;Folder&quot;</span><span class="p">)</span>
+<span class="nx">folder</span><span class="p">.</span><span class="nx">Name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Test&quot;</span>
 </code></pre></div>
 </div>
 </div>
@@ -1940,8 +1694,8 @@
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">folder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Instance</span><span class="p">(</span><span class="s2">&quot;Folder&quot;</span><span class="p">)</span><span class="w"></span>
-<span class="nx">folder</span><span class="p">.</span><span class="nx">Clone</span><span class="p">()</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">folder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Instance</span><span class="p">(</span><span class="s2">&quot;Folder&quot;</span><span class="p">)</span>
+<span class="nx">folder</span><span class="p">.</span><span class="nx">Clone</span><span class="p">()</span>
 </code></pre></div>
 </div>
 </div>
@@ -1958,9 +1712,9 @@
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span><span class="w"> </span><span class="nx">count</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span><span class="w"> </span><span class="nx">count</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">print</span><span class="p">(</span><span class="nx">count</span><span class="p">)</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span><span class="w"> </span><span class="nx">count</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span><span class="w"> </span><span class="nx">count</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">print</span><span class="p">(</span><span class="nx">count</span><span class="p">)</span>
+<span class="p">}</span>
 </code></pre></div>
 </div>
 </div>
@@ -1975,9 +1729,9 @@
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">player</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">Players</span><span class="p">.</span><span class="nx">GetPlayers</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">print</span><span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">Name</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">player</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">Players</span><span class="p">.</span><span class="nx">GetPlayers</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">print</span><span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">Name</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre></div>
 </div>
 </div>
@@ -1992,9 +1746,9 @@
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="kc">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">print</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="kc">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">print</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>
+<span class="p">}</span>
 </code></pre></div>
 </div>
 </div>
@@ -2011,15 +1765,15 @@
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="c1">// Arrow Function</span><span class="w"></span>
-<span class="nx">Players</span><span class="p">.</span><span class="nx">GetPlayers</span><span class="p">().</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">player</span><span class="o">:</span><span class="w"> </span><span class="kt">Player</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">print</span><span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">Name</span><span class="p">);</span><span class="w"></span>
-<span class="p">});</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="c1">// Arrow Function</span>
+<span class="nx">Players</span><span class="p">.</span><span class="nx">GetPlayers</span><span class="p">().</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">player</span><span class="o">:</span><span class="w"> </span><span class="kt">Player</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">print</span><span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">Name</span><span class="p">);</span>
+<span class="p">});</span>
 
-<span class="c1">// Normal function</span><span class="w"></span>
-<span class="nx">Players</span><span class="p">.</span><span class="nx">GetPlayers</span><span class="p">().</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">player</span><span class="o">:</span><span class="w"> </span><span class="kt">Player</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">print</span><span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">Name</span><span class="p">);</span><span class="w"></span>
-<span class="p">});</span><span class="w"></span>
+<span class="c1">// Normal function</span>
+<span class="nx">Players</span><span class="p">.</span><span class="nx">GetPlayers</span><span class="p">().</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">player</span><span class="o">:</span><span class="w"> </span><span class="kt">Player</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">print</span><span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">Name</span><span class="p">);</span>
+<span class="p">});</span>
 </code></pre></div>
 </div>
 </div>
@@ -2034,7 +1788,7 @@
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">example</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;test&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">524</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="p">]</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">example</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;test&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">524</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="p">]</span>
 </code></pre></div>
 </div>
 </div>
@@ -2049,9 +1803,9 @@
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">example</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;test&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">524</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="p">]</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">example</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;test&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">524</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="p">]</span>
 
-<span class="nx">example</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s2">&quot;added!&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="nx">example</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s2">&quot;added!&quot;</span><span class="p">)</span>
 </code></pre></div>
 </div>
 </div>
@@ -2066,9 +1820,9 @@
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">example</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;test&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">524</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="p">]</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">example</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;test&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">524</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="p">]</span>
 
-<span class="nx">print</span><span class="p">(</span><span class="nx">example</span><span class="p">[</span><span class="mf">0</span><span class="p">])</span><span class="w"> </span><span class="c1">// test</span><span class="w"></span>
+<span class="nx">print</span><span class="p">(</span><span class="nx">example</span><span class="p">[</span><span class="mf">0</span><span class="p">])</span><span class="w"> </span><span class="c1">// test</span>
 </code></pre></div>
 </div>
 </div>
@@ -2085,11 +1839,11 @@
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">example</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;test&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">524</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="p">]</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">example</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;test&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">524</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="p">]</span>
 
-<span class="nx">example</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="mf">0</span><span class="p">)</span><span class="w"></span>
+<span class="nx">example</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="mf">0</span><span class="p">)</span>
 
-<span class="nx">print</span><span class="p">(</span><span class="nx">example</span><span class="p">[</span><span class="mf">0</span><span class="p">])</span><span class="w"> </span><span class="c1">// 524</span><span class="w"></span>
+<span class="nx">print</span><span class="p">(</span><span class="nx">example</span><span class="p">[</span><span class="mf">0</span><span class="p">])</span><span class="w"> </span><span class="c1">// 524</span>
 </code></pre></div>
 </div>
 </div>
@@ -2107,17 +1861,17 @@
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">example</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;test&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">524</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="p">]</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">example</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;test&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">524</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="p">]</span>
 
-<span class="c1">// Same as Lua example</span><span class="w"></span>
-<span class="nx">example</span><span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">value</span><span class="p">,</span><span class="w"> </span><span class="nx">index</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">print</span><span class="p">(</span><span class="nx">index</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="p">)</span><span class="w"> </span><span class="c1">// 1 test    2 524    3 true</span><span class="w"></span>
-<span class="p">});</span><span class="w"></span>
+<span class="c1">// Same as Lua example</span>
+<span class="nx">example</span><span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">value</span><span class="p">,</span><span class="w"> </span><span class="nx">index</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">print</span><span class="p">(</span><span class="nx">index</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="p">)</span><span class="w"> </span><span class="c1">// 1 test    2 524    3 true</span>
+<span class="p">});</span>
 
-<span class="c1">// Doesn&#39;t include the index</span><span class="w"></span>
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">value</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">example</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">print</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span><span class="w"> </span><span class="c1">// 1 test    2 524    3 true</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="c1">// Doesn&#39;t include the index</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">value</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">example</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">print</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span><span class="w"> </span><span class="c1">// 1 test    2 524    3 true</span>
+<span class="p">}</span>
 </code></pre></div>
 </div>
 </div>
@@ -2138,11 +1892,11 @@
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">example</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Map</span><span class="o">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">any</span><span class="o">&gt;</span><span class="p">([</span><span class="w"></span>
-<span class="w">    </span><span class="p">[</span><span class="s2">&quot;Key&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">],</span><span class="w"></span>
-<span class="w">    </span><span class="p">[</span><span class="s2">&quot;key2&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{}],</span><span class="w"></span>
-<span class="w">    </span><span class="p">[</span><span class="s2">&quot;key3&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;NewKey&quot;</span><span class="p">],</span><span class="w"></span>
-<span class="p">])</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">example</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Map</span><span class="o">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">any</span><span class="o">&gt;</span><span class="p">([</span>
+<span class="w">    </span><span class="p">[</span><span class="s2">&quot;Key&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">],</span>
+<span class="w">    </span><span class="p">[</span><span class="s2">&quot;key2&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{}],</span>
+<span class="w">    </span><span class="p">[</span><span class="s2">&quot;key3&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;NewKey&quot;</span><span class="p">],</span>
+<span class="p">])</span>
 </code></pre></div>
 </div>
 </div>
@@ -2161,13 +1915,13 @@
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">example</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Map</span><span class="o">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">any</span><span class="o">&gt;</span><span class="p">([</span><span class="w"></span>
-<span class="w">    </span><span class="p">[</span><span class="s2">&quot;Key&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">],</span><span class="w"></span>
-<span class="w">    </span><span class="p">[</span><span class="s2">&quot;key2&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{}],</span><span class="w"></span>
-<span class="w">    </span><span class="p">[</span><span class="s2">&quot;key3&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;NewKey&quot;</span><span class="p">],</span><span class="w"></span>
-<span class="p">])</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">example</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Map</span><span class="o">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">any</span><span class="o">&gt;</span><span class="p">([</span>
+<span class="w">    </span><span class="p">[</span><span class="s2">&quot;Key&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">],</span>
+<span class="w">    </span><span class="p">[</span><span class="s2">&quot;key2&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{}],</span>
+<span class="w">    </span><span class="p">[</span><span class="s2">&quot;key3&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;NewKey&quot;</span><span class="p">],</span>
+<span class="p">])</span>
 
-<span class="nx">example</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s2">&quot;aNewKey&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">100</span><span class="p">);</span><span class="w"></span>
+<span class="nx">example</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s2">&quot;aNewKey&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">100</span><span class="p">);</span>
 </code></pre></div>
 </div>
 </div>
@@ -2186,13 +1940,13 @@
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">example</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Map</span><span class="o">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">any</span><span class="o">&gt;</span><span class="p">([</span><span class="w"></span>
-<span class="w">    </span><span class="p">[</span><span class="s2">&quot;Key&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">],</span><span class="w"></span>
-<span class="w">    </span><span class="p">[</span><span class="s2">&quot;key2&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{}],</span><span class="w"></span>
-<span class="w">    </span><span class="p">[</span><span class="s2">&quot;key3&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;NewKey&quot;</span><span class="p">],</span><span class="w"></span>
-<span class="p">])</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">example</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Map</span><span class="o">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">any</span><span class="o">&gt;</span><span class="p">([</span>
+<span class="w">    </span><span class="p">[</span><span class="s2">&quot;Key&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">],</span>
+<span class="w">    </span><span class="p">[</span><span class="s2">&quot;key2&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{}],</span>
+<span class="w">    </span><span class="p">[</span><span class="s2">&quot;key3&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;NewKey&quot;</span><span class="p">],</span>
+<span class="p">])</span>
 
-<span class="nx">print</span><span class="p">(</span><span class="nx">example</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;Key&quot;</span><span class="p">))</span><span class="w"> </span><span class="c1">// 3</span><span class="w"></span>
+<span class="nx">print</span><span class="p">(</span><span class="nx">example</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;Key&quot;</span><span class="p">))</span><span class="w"> </span><span class="c1">// 3</span>
 </code></pre></div>
 </div>
 </div>
@@ -2213,15 +1967,15 @@
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">example</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Map</span><span class="o">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">any</span><span class="o">&gt;</span><span class="p">([</span><span class="w"></span>
-<span class="w">    </span><span class="p">[</span><span class="s2">&quot;Key&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">],</span><span class="w"></span>
-<span class="w">    </span><span class="p">[</span><span class="s2">&quot;key2&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{}],</span><span class="w"></span>
-<span class="w">    </span><span class="p">[</span><span class="s2">&quot;key3&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;NewKey&quot;</span><span class="p">],</span><span class="w"></span>
-<span class="p">])</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">example</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Map</span><span class="o">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">any</span><span class="o">&gt;</span><span class="p">([</span>
+<span class="w">    </span><span class="p">[</span><span class="s2">&quot;Key&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">],</span>
+<span class="w">    </span><span class="p">[</span><span class="s2">&quot;key2&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{}],</span>
+<span class="w">    </span><span class="p">[</span><span class="s2">&quot;key3&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;NewKey&quot;</span><span class="p">],</span>
+<span class="p">])</span>
 
-<span class="nx">exampleMap</span><span class="p">.</span><span class="ow">delete</span><span class="p">(</span><span class="s2">&quot;Key&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="nx">exampleMap</span><span class="p">.</span><span class="ow">delete</span><span class="p">(</span><span class="s2">&quot;Key&quot;</span><span class="p">)</span>
 
-<span class="nx">print</span><span class="p">(</span><span class="nx">example</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;Key&quot;</span><span class="p">))</span><span class="w"> </span><span class="c1">// nil</span><span class="w"></span>
+<span class="nx">print</span><span class="p">(</span><span class="nx">example</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&quot;Key&quot;</span><span class="p">))</span><span class="w"> </span><span class="c1">// nil</span>
 </code></pre></div>
 </div>
 </div>
@@ -2243,26 +1997,26 @@
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">example</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Map</span><span class="o">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">unknown</span><span class="o">&gt;</span><span class="p">([</span><span class="w"></span>
-<span class="w">    </span><span class="p">[</span><span class="s2">&quot;Key&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">],</span><span class="w"></span>
-<span class="w">    </span><span class="p">[</span><span class="s2">&quot;key2&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{}],</span><span class="w"></span>
-<span class="w">    </span><span class="p">[</span><span class="s2">&quot;key3&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;NewKey&quot;</span><span class="p">],</span><span class="w"></span>
-<span class="p">])</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">example</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Map</span><span class="o">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">unknown</span><span class="o">&gt;</span><span class="p">([</span>
+<span class="w">    </span><span class="p">[</span><span class="s2">&quot;Key&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">],</span>
+<span class="w">    </span><span class="p">[</span><span class="s2">&quot;key2&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{}],</span>
+<span class="w">    </span><span class="p">[</span><span class="s2">&quot;key3&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;NewKey&quot;</span><span class="p">],</span>
+<span class="p">])</span>
 
-<span class="c1">// Same as Lua example</span><span class="w"></span>
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">key</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="p">]</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">example</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">print</span><span class="p">(</span><span class="nx">key</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="p">)</span><span class="w"> </span><span class="c1">// &quot;Key&quot; 3   &quot;key2&quot; {}   &quot;key3&quot; &quot;NewKey&quot;</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="c1">// Same as Lua example</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">key</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="p">]</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">example</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">print</span><span class="p">(</span><span class="nx">key</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="p">)</span><span class="w"> </span><span class="c1">// &quot;Key&quot; 3   &quot;key2&quot; {}   &quot;key3&quot; &quot;NewKey&quot;</span>
+<span class="p">}</span>
 
-<span class="c1">// Using forEach instead of a For Of Loop</span><span class="w"></span>
-<span class="nx">example</span><span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">value</span><span class="p">,</span><span class="w"> </span><span class="nx">key</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">print</span><span class="p">(</span><span class="nx">key</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="p">);</span><span class="w"> </span><span class="c1">// &quot;Key&quot; 3   &quot;key2&quot; {}   &quot;key3&quot; &quot;NewKey&quot;</span><span class="w"></span>
-<span class="p">});</span><span class="w"></span>
+<span class="c1">// Using forEach instead of a For Of Loop</span>
+<span class="nx">example</span><span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">value</span><span class="p">,</span><span class="w"> </span><span class="nx">key</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">print</span><span class="p">(</span><span class="nx">key</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="p">);</span><span class="w"> </span><span class="c1">// &quot;Key&quot; 3   &quot;key2&quot; {}   &quot;key3&quot; &quot;NewKey&quot;</span>
+<span class="p">});</span>
 
-<span class="c1">// Another way of doing it</span><span class="w"></span>
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">entry</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">example</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">print</span><span class="p">(</span><span class="nx">entry</span><span class="p">[</span><span class="mf">0</span><span class="p">],</span><span class="w"> </span><span class="nx">entry</span><span class="p">[</span><span class="mf">1</span><span class="p">])</span><span class="w"> </span><span class="c1">// &quot;Key&quot; 3   &quot;key2&quot; {}   &quot;key3&quot; &quot;NewKey&quot;</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="c1">// Another way of doing it</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">entry</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">example</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">print</span><span class="p">(</span><span class="nx">entry</span><span class="p">[</span><span class="mf">0</span><span class="p">],</span><span class="w"> </span><span class="nx">entry</span><span class="p">[</span><span class="mf">1</span><span class="p">])</span><span class="w"> </span><span class="c1">// &quot;Key&quot; 3   &quot;key2&quot; {}   &quot;key3&quot; &quot;NewKey&quot;</span>
+<span class="p">}</span>
 </code></pre></div>
 </div>
 </div>
@@ -2288,19 +2042,19 @@
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kd">class</span><span class="w"> </span><span class="nx">Exmaple</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">player</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="nx">userId</span><span class="p">;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kd">class</span><span class="w"> </span><span class="nx">Exmaple</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">player</span><span class="p">;</span>
+<span class="w">    </span><span class="nx">userId</span><span class="p">;</span>
 
-<span class="w">    </span><span class="kr">constructor</span><span class="p">(</span><span class="nx">player</span><span class="o">:</span><span class="w"> </span><span class="kt">Player</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">player</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">player</span><span class="w"></span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">userId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">player</span><span class="p">.</span><span class="nx">UserId</span><span class="w"></span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="kr">constructor</span><span class="p">(</span><span class="nx">player</span><span class="o">:</span><span class="w"> </span><span class="kt">Player</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">player</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">player</span>
+<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">userId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">player</span><span class="p">.</span><span class="nx">UserId</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">this</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
 
-<span class="c1">// Create object</span><span class="w"></span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">object</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Example</span><span class="p">(</span><span class="nx">player</span><span class="p">)</span><span class="w"></span>
+<span class="c1">// Create object</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">object</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Example</span><span class="p">(</span><span class="nx">player</span><span class="p">)</span>
 </code></pre></div>
 </div>
 </div>
@@ -2331,25 +2085,25 @@
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kd">class</span><span class="w"> </span><span class="nx">Exmaple</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">player</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="nx">userId</span><span class="p">;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kd">class</span><span class="w"> </span><span class="nx">Exmaple</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">player</span><span class="p">;</span>
+<span class="w">    </span><span class="nx">userId</span><span class="p">;</span>
 
-<span class="w">    </span><span class="kr">constructor</span><span class="p">(</span><span class="nx">player</span><span class="o">:</span><span class="w"> </span><span class="kt">Player</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">player</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">player</span><span class="w"></span>
-<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">userId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">player</span><span class="p">.</span><span class="nx">UserId</span><span class="w"></span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="kr">constructor</span><span class="p">(</span><span class="nx">player</span><span class="o">:</span><span class="w"> </span><span class="kt">Player</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">player</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">player</span>
+<span class="w">        </span><span class="k">this</span><span class="p">.</span><span class="nx">userId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">player</span><span class="p">.</span><span class="nx">UserId</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">this</span>
+<span class="w">    </span><span class="p">}</span>
 
-<span class="w">    </span><span class="nx">GetPlayerName</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">player</span><span class="p">.</span><span class="nx">Name</span><span class="w"></span>
-<span class="w">    </span><span class="p">}</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="nx">GetPlayerName</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">player</span><span class="p">.</span><span class="nx">Name</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
 
-<span class="c1">// Create object</span><span class="w"></span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">object</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Example</span><span class="p">(</span><span class="nx">player</span><span class="p">)</span><span class="w"></span>
+<span class="c1">// Create object</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">object</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Example</span><span class="p">(</span><span class="nx">player</span><span class="p">)</span>
 
-<span class="nx">object</span><span class="p">.</span><span class="nx">GetPlayerName</span><span class="p">()</span><span class="w"></span>
+<span class="nx">object</span><span class="p">.</span><span class="nx">GetPlayerName</span><span class="p">()</span>
 </code></pre></div>
 </div>
 </div>
@@ -2364,11 +2118,11 @@
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">ReplicatedStorage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">game</span><span class="p">.</span><span class="nx">GetService</span><span class="p">(</span><span class="s1">&#39;ReplicatedStorage&#39;</span><span class="p">)</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">ReplicatedStorage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">game</span><span class="p">.</span><span class="nx">GetService</span><span class="p">(</span><span class="s1">&#39;ReplicatedStorage&#39;</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">ReplicatedStorage</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@rbxts/services&quot;</span><span class="p">;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">ReplicatedStorage</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@rbxts/services&quot;</span><span class="p">;</span>
 </code></pre></div>
 </div>
 </div>
@@ -2400,78 +2154,45 @@
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="c1">// Module Script named Config within my Rojo Project folder called &quot;Shared&quot;</span><span class="w"></span>
-<span class="c1">// which is is synced to the ReplicatedStorage</span><span class="w"></span>
-<span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">List</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Example&quot;</span><span class="p">];</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="c1">// Module Script named Config within my Rojo Project folder called &quot;Shared&quot;</span>
+<span class="c1">// which is is synced to the ReplicatedStorage</span>
+<span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">List</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Example&quot;</span><span class="p">];</span>
 
-<span class="k">export</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">Print</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="nx">print</span><span class="p">(</span><span class="s2">&quot;Hey!&quot;</span><span class="p">)</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">Print</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">print</span><span class="p">(</span><span class="s2">&quot;Hey!&quot;</span><span class="p">)</span>
+<span class="p">}</span>
 
-<span class="c1">// Requiring the Module Script in another Script</span><span class="w"></span>
-<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">List</span><span class="p">,</span><span class="w"> </span><span class="nx">Print</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;shared/Config&quot;</span><span class="w"></span>
+<span class="c1">// Requiring the Module Script in another Script</span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">List</span><span class="p">,</span><span class="w"> </span><span class="nx">Print</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;shared/Config&quot;</span>
 
-<span class="nx">print</span><span class="p">(</span><span class="nx">List</span><span class="p">)</span><span class="w"></span>
-<span class="nx">Print</span><span class="p">()</span><span class="w"></span>
+<span class="nx">print</span><span class="p">(</span><span class="nx">List</span><span class="p">)</span>
+<span class="nx">Print</span><span class="p">()</span>
 </code></pre></div>
 </div>
 </div>
 </div>
 
+
   
 
 
 
 
-              
-            </article>
-            
-          </div>
+                
+              </article>
+            </div>
+          
+          
         </div>
         
-          <a href="#" class="md-top md-top--hidden md-icon" data-md-component="top">
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
             Back to top
-          </a>
+          </button>
         
       </main>
       
         <footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
-      
-        
-        <a href="../the-basics/" class="md-footer__link md-footer__link--prev" aria-label="Previous: The Basics" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              The Basics
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../../lessons/replication/" class="md-footer__link md-footer__link--next" aria-label="Next: Replication" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Replication
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -2488,20 +2209,26 @@
   
     
     
+    
+    
     <a href="https://twitter.com/LearnRoblox" target="_blank" rel="noopener" title="LearnRoblox on Twitter" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
     </a>
   
+    
+    
     
     
     <a href="https://Discord.gg/LearnRoblox" target="_blank" rel="noopener" title="LearnRoblox on Discord" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg>
     </a>
   
     
     
+    
+    
     <a href="https://YouTube.com/MonzterDev" target="_blank" rel="noopener" title="MonzterDev on YouTube" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
     </a>
   
 </div>
@@ -2521,15 +2248,23 @@
           <form class="md-consent__form md-grid md-typeset" name="consent">
             
 
+  
+    
+  
+
+
+
 
   
 
+
 <h4>Cookie consent</h4>
 <p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
-<input type="checkbox" class="md-toggle" id="__settings">
+<input class="md-toggle" type="checkbox" id="__settings" >
 <div class="md-consent__settings">
   <ul class="task-list">
     
+      
       
         
         
@@ -2539,24 +2274,35 @@
           <input type="checkbox" name="analytics" checked>
           <span class="task-list-indicator"></span>
           Google Analytics
-        <label>
+        </label>
       </li>
     
   </ul>
 </div>
 <div class="md-consent__controls">
-  <label class="md-button" for="__settings">Manage settings</label>
-  <button class="md-button md-button--primary">Accept</button>
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
 </div>
           </form>
         </aside>
       </div>
-      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var form=document.forms.consent;form.addEventListener("submit",function(n){n.preventDefault(),__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(n){return[n,!0]}))),location.hash="",location.reload()})</script>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.top", "navigation.indexes", "toc.follow"], "search": "../../assets/javascripts/workers/search.ec8bae80.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.top", "navigation.indexes", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.2f76aa63.min.js"></script>
+      <script src="../../assets/javascripts/bundle.51198bba.min.js"></script>
       
     
   </body>
