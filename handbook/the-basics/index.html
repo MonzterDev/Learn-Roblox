@@ -17,7 +17,7 @@
         <link rel="next" href="../lua-to-ts/">
       
       <link rel="icon" href="/img/branding/Learn_Roblox_Logo_Full.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.8">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.15">
     
     
       
@@ -25,10 +25,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ded33207.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.26e3688c.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ecc896b0.min.css">
       
       
 
@@ -1020,6 +1020,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -1070,6 +1072,20 @@
     <li class="md-nav__item">
       <a href="../../lessons/type-checking/" class="md-nav__link">
         Type Checking
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lessons/commissions/" class="md-nav__link">
+        Commissions
       </a>
     </li>
   
@@ -1269,7 +1285,7 @@
 <tr>
 <td><code>string</code></td>
 <td>"StringType"</td>
-<td>Characters surrounded by <code>"</code>s</td>
+<td>Characters surrounded by <code>"</code>, <code>'</code>, or <code>`</code>s</td>
 </tr>
 <tr>
 <td><code>number</code></td>
@@ -1313,9 +1329,23 @@
 </div>
 </div>
 </div>
+<p>Using <strong>backticks</strong> is another easy way of combining strings.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Example</label><label for="__tabbed_2_2">Output</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">firstString</span> <span class="o">=</span> <span class="s2">&quot;Hey I&#39;m&quot;</span>
+<span class="kd">local</span> <span class="n">newString</span> <span class="o">=</span> <span class="err">`</span><span class="p">{</span><span class="n">firstString</span><span class="p">}</span> <span class="n">pretty</span> <span class="n">cool</span><span class="err">!`</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">newString</span><span class="p">)</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>Hey I'm pretty cool!</p>
+</div>
+</div>
+</div>
 <h4 id="number">Number<a class="headerlink" href="#number" title="Permanent link">&para;</a></h4>
 <p>You can do <strong>math</strong> with two numbers by using any <strong>arithmetic symbols</strong> between the numbers.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Example</label><label for="__tabbed_2_2">Output</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Example</label><label for="__tabbed_3_2">Output</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">newMath</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">+</span> <span class="mi">10</span>
@@ -1329,7 +1359,7 @@
 </div>
 <h4 id="boolean">Boolean<a class="headerlink" href="#boolean" title="Permanent link">&para;</a></h4>
 <p>You can use a <strong>conditional statement</strong> to create a boolean.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Example</label><label for="__tabbed_3_2">Output</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Example</label><label for="__tabbed_4_2">Output</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">newBool</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">+</span> <span class="mi">10</span> <span class="o">==</span> <span class="mi">15</span>
@@ -1605,7 +1635,7 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.top", "navigation.indexes", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.51198bba.min.js"></script>
+      <script src="../../assets/javascripts/bundle.b4d07000.min.js"></script>
       
     
   </body>
