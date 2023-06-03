@@ -1,8 +1,8 @@
-Are you looking to make some quick Robux or hire someone to create assets for your game? This guide will make your commission journey much smoother!
+If you're looking to make quick Robux or hire someone to create assets for your game, this guide will help streamline your commission journey.
 
 ## Portfolio
 
-If you're interested in performing commission work in the Roblox community, you should have a portfolio that showcases your capabilities and previous work. Think of it like a resume - highlight your strengths, use as much media (images & videos) as possible, and make it easily accessible. Consider using a popular site like [Cardd](https://carrd.co/) for creating and sharing your portfolio.
+To showcase your capabilities and previous work, it's important to have a portfolio. Think of it as a resume, highlighting your strengths with images and videos. You can use popular sites like [Cardd](https://carrd.co/) to create and share your portfolio easily.
 
 ## Initiating Contact
 
@@ -47,7 +47,7 @@ The truth though, is that "Friends & Family" payments are not immune to chargeba
 
 #### Refunds
 
-Refunding through PayPal incurs fees.
+It's important to know that when you refund a payment, you actually lose a small amount of money. According to PayPal: "If you refund a payment for goods or services, there are no fees to process the refund, but the fees you originally paid as the seller are not returned to you"
 
 #### Chargebacks
 
@@ -61,17 +61,37 @@ When you receive a chargeback, you may lose all of the money and incur fees on P
 
 Remember to establish terms & conditions upfront, provide detailed information when initiating contact, and carefully consider payment methods to ensure a successful commission experience.
 
-### Stripe
+#### Tips
 
-### CashApp, Venmo
+* When sending a payment, you have an option to describe what the payment is for. You should be very careful with your wording here because it could easily get your or both parties involved's accounts shut down. I've witnessed someone receiving payments for "Gun Models" and then having their PayPal account be locked.
+
+### [Stripe](https://stripe.com/)
+
+Stripe is less commonly used than PayPal, but they're quite similar.
+
+### [CashApp](https://cash.app/app/XTVRXQW) & [Venmo](https://get.venmo.com/MVPfRdSskAb)
+
+These services are more easily accessible than PayPal and seem to be more commonly used by younger audiences.
+
+I've briefly used both of these services and they're acceptable, but I would prefer using PayPal as it feels much more professional.
+
+#### Chargebacks
+
+Customers may still chargeback using these services, unless the payment sent was from their CashApp or Venmo balance. If the payment was sent from their Bank Account, then they can still call their bank and file a chargeback.
 
 ### Robux
 
-This is the only method which is easily availible to anyone under the age of 18.
+This is the only method which is entirely accessible to anyone under the age of 18.
+
+#### Chargebacks
 
 There are no refunds or possibilities of chargebacks.
 
-To receive Robux payments, developers often use **Game Passes**. Here's how it works:
+#### Receiving Payment
+
+To receive Robux payments, developers often use **Game Passes**.
+
+Here's how it works:
 
 - Create a Game Pass for your game
 - Configure the Game Pass and set the "Item on Sale" to true
@@ -82,3 +102,39 @@ It's important to note that when you establish a price for your Game Pass, you n
 The value of Robux can be a bit tricky to understand. For example, if you were to purchase $10 USD worth of Robux, you'd get 800 Robux. If you were then to use that Robux to pay a commission of 1,000 Robux, it would be the equivalent of paying $2.80 USD! This is due to the Developer Exchange, which allows you to convert your Robux back to USD. When paying with Robux, it's important to realize that 1 Robux is worth $0.0035 USD.
 
 For new developers, it may be wise to avoid paying with Robux at first, as they're literally losing money when purchasing Robux. However, once they start making Robux through their projects, it can be a convenient way to pay for services.
+
+## Guidelines
+
+### Vetting
+
+When you're in the market as a buyer, it's essential to vet the sellers before commissioning any work. One effective method for vetting sellers is to examine their history on various platforms. While I personally use Discord for commissions, this vetting process applies to most social media platforms.
+
+To begin, explore the Discord profile of the seller you're interested in commissioning. Additionally, check if they have any other social media accounts linked. It's a good idea to note down these links in case they are removed from the profile later on.
+
+Furthermore, take the time to search through the messages the seller has posted in servers that you both share. This can provide valuable insights:
+
+- How long ago did the seller start selling their work?
+- Do they exhibit professionalism in their interactions?
+- Have there been any instances of drama or accusations involving the seller?
+
+It's worth noting that if a seller has recently joined the community, it may increase the likelihood of them being a scammer.
+
+### Downloads
+
+Exercise caution when downloading files from individuals online, particularly in the context of Roblox. The most common file formats used in Roblox are `.rbxlx` and `.rbxmx`. When receiving files in these formats, be vigilant and verify their authenticity before opening them.
+
+### Team Create
+
+When commissioning someone for a project, it's important to limit their access to only what is necessary. For example, if you're hiring someone to create a map for your game, avoid granting them access to your entire game's place. Instead, copy and paste the relevant elements from your Workspace into a separate place and invite the builder to work on that specific place.
+
+By following this practice, you can safeguard your project and ensure that the builder can complete their work without unnecessary access to unrelated components.
+
+### Going First
+
+Determining the order of delivery during a commission can be challenging. In my experience, when commissioning work from someone, it's advisable to adopt a 50/50 approach. This means paying 50% upfront and the remaining 50% once the seller shares media of the finished product or delivers it to you.
+
+However, if you find yourself being commissioned by someone else, it is generally not recommended to deliver the entire product until you have received full or majority payment. This approach helps protect your work and ensures that you are fairly compensated.
+
+In most cases, if you have commissioned something very specific, the likelihood of the seller scamming you by not delivering the final product is low. It is unlikely that they would invest their time in creating a highly customized commission only to deceive you and risk not receiving full payment. They are unlikely to be able to repurpose those assets elsewhere.
+
+Remember to follow these guidelines to mitigate potential risks and establish a mutually beneficial commissioning experience.
